@@ -1,0 +1,172 @@
+{
+  "target": "strength_mpa",
+  "group_only_not_model_feature": "source_id",
+  "numeric_features": [
+    "component_pct__4ddccd9d18",
+    "component_pct__0bd5cdc2ba",
+    "component_pct__036a7ab9da",
+    "component_pct__da222dc629",
+    "component_pct__11558323aa",
+    "component_pct__0417e4a1e6",
+    "component_pct__5b5e598b9e",
+    "component_pct__2e2f22f2af",
+    "component_pct__9436efc2c8",
+    "component_pct__2ea931f62b",
+    "component_pct__3c120dc2ff",
+    "component_pct__1258aacb2e",
+    "component_pct__c2bf070694",
+    "component_pct__a1d66a6c4f",
+    "component_pct__b64f6de631",
+    "component_pct__a33f452041",
+    "component_pct__cea0bc6648",
+    "component_pct__96803eca9c",
+    "component_pct__abaaa3eedb",
+    "component_pct__8155d7eaff",
+    "component_pct__ff97177801",
+    "component_pct__4d971d1334",
+    "component_pct__96836bdd17",
+    "test_speed_mm_min",
+    "extrusion_temp_min_C",
+    "extrusion_temp_max_C",
+    "extruder_screw_speed_rpm",
+    "injection_temp_min_C",
+    "injection_temp_max_C",
+    "mold_temp_C",
+    "post_anneal_temp_C",
+    "post_anneal_time_h",
+    "conditioning_temp_C",
+    "conditioning_rh_pct",
+    "conditioning_time_h",
+    "mixing_temp_min_C",
+    "mixing_temp_max_C",
+    "mixer_speed_rpm",
+    "mixing_time_min",
+    "injection_pressure_bar",
+    "holding_time_s"
+  ],
+  "categorical_features": [
+    "processing_route",
+    "compounding_route",
+    "processing_variant",
+    "test_standard",
+    "test_temperature_status"
+  ],
+  "component_feature_map": [
+    {
+      "feature_column": "component_pct__4ddccd9d18",
+      "role": "antioxidant",
+      "component_name": "Antioxidant B215"
+    },
+    {
+      "feature_column": "component_pct__0bd5cdc2ba",
+      "role": "compatibilizer",
+      "component_name": "PP-g-m-TMI"
+    },
+    {
+      "feature_column": "component_pct__036a7ab9da",
+      "role": "effect pigment",
+      "component_name": "Al effect pigment, grade/particle size not identified"
+    },
+    {
+      "feature_column": "component_pct__da222dc629",
+      "role": "filler",
+      "component_name": "Barium sulfate"
+    },
+    {
+      "feature_column": "component_pct__11558323aa",
+      "role": "filler",
+      "component_name": "Calcium carbonate"
+    },
+    {
+      "feature_column": "component_pct__0417e4a1e6",
+      "role": "filler",
+      "component_name": "Fe3+/硬脂酸改性蒙脱土 SMMT"
+    },
+    {
+      "feature_column": "component_pct__5b5e598b9e",
+      "role": "filler",
+      "component_name": "Na-MMT PGW"
+    },
+    {
+      "feature_column": "component_pct__2e2f22f2af",
+      "role": "filler",
+      "component_name": "Talc"
+    },
+    {
+      "feature_column": "component_pct__9436efc2c8",
+      "role": "filler",
+      "component_name": "纸浆粉"
+    },
+    {
+      "feature_column": "component_pct__2ea931f62b",
+      "role": "flame retardant",
+      "component_name": "Bromine-phosphorus-nitrogen flame-retardant blend"
+    },
+    {
+      "feature_column": "component_pct__3c120dc2ff",
+      "role": "lubricant",
+      "component_name": "Calcium stearate"
+    },
+    {
+      "feature_column": "component_pct__1258aacb2e",
+      "role": "lubricant",
+      "component_name": "EBS lubricant"
+    },
+    {
+      "feature_column": "component_pct__c2bf070694",
+      "role": "matrix",
+      "component_name": "PP BX3900"
+    },
+    {
+      "feature_column": "component_pct__a1d66a6c4f",
+      "role": "matrix",
+      "component_name": "PP HP500N-Z homopolymer"
+    },
+    {
+      "feature_column": "component_pct__b64f6de631",
+      "role": "matrix",
+      "component_name": "PP M1100"
+    },
+    {
+      "feature_column": "component_pct__a33f452041",
+      "role": "matrix",
+      "component_name": "均聚PP基体"
+    },
+    {
+      "feature_column": "component_pct__cea0bc6648",
+      "role": "matrix",
+      "component_name": "嵌段共聚PP BB110"
+    },
+    {
+      "feature_column": "component_pct__96803eca9c",
+      "role": "matrix",
+      "component_name": "等规聚丙烯 T30S"
+    },
+    {
+      "feature_column": "component_pct__abaaa3eedb",
+      "role": "nucleating_agent",
+      "component_name": "TMB-5"
+    },
+    {
+      "feature_column": "component_pct__8155d7eaff",
+      "role": "primary antioxidant",
+      "component_name": "Antioxidant 1010"
+    },
+    {
+      "feature_column": "component_pct__ff97177801",
+      "role": "reinforcement",
+      "component_name": "T-700 desized carbon fiber"
+    },
+    {
+      "feature_column": "component_pct__4d971d1334",
+      "role": "reinforcement",
+      "component_name": "n-butylphenyl-functionalized T-700 carbon fiber"
+    },
+    {
+      "feature_column": "component_pct__96836bdd17",
+      "role": "secondary antioxidant",
+      "component_name": "Antioxidant 168"
+    }
+  ],
+  "note": "source_id is used for paper-group validation only and is excluded from model inputs."
+}
