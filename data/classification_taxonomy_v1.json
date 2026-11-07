@@ -1,0 +1,14 @@
+{
+  "taxonomy_version":"1.0.0",
+  "axes":[
+    {"id":"target_property","label":"目标性能","categories":["拉伸强度","拉伸模量","断裂伸长率","弯曲强度","弯曲模量","缺口冲击","熔体流动","热学/结晶","电气/介电","表面性能"]},
+    {"id":"specimen_form","label":"试样/制品形态","categories":["块状注塑/模压","薄膜/片材","纤维/单丝","无纺布/织物","多孔膜/泡沫","电缆绝缘","涂层/表面试样","未报告/未确认"]},
+    {"id":"pp_matrix","label":"PP基体类型","categories":["均聚PP","无规共聚PP","抗冲/嵌段共聚PP","再生PP","接枝/交联/特殊PP","未报告/未确认"]},
+    {"id":"mechanism","label":"改性机制（多选）","categories":["矿物/纳米填料增强","纤维增强","有机聚合物共混","弹性体增韧","相容/界面改性","接枝或交联","成核/结晶调控","阻燃改性","表面处理/涂层","再生料改性"]},
+    {"id":"component_function","label":"组分功能","categories":["PP基体","矿物/纳米填料","纤维增强材料","聚合物共混组分","弹性体增韧剂","相容/界面改性剂","阻燃剂","成核剂","稳定/加工助剂","颜料/着色剂","其他功能组分"]},
+    {"id":"process_stage","label":"工艺阶段","categories":["原料合成","填料/纤维表面处理","配混/造粒","成型","退火/辐照/后处理"]},
+    {"id":"test_conditions","label":"测试条件","categories":["测试标准","速度","温度","湿度/调节","试样尺寸与状态","重复数与统计量"]}
+  ],
+  "function_categories":{"matrix":"PP基体","mineral_filler":"矿物/纳米填料","fiber_reinforcement":"纤维增强材料","polymer_blend":"聚合物共混组分","elastomer_toughening":"弹性体增韧剂","compatibilization":"相容/界面改性剂","flame_retardant":"阻燃剂","nucleation_crystallization":"成核剂","stabilizer_process_aid":"稳定/加工助剂","pigment_colorant":"颜料/着色剂","other_function":"其他功能组分"},
+  "prediction_scope":{"property":"拉伸强度","specimen_form_class":"unknown_or_not_reported","pp_matrix_class":"pp_homopolymer_or_unspecified"}
+}

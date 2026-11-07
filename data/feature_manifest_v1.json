@@ -1,0 +1,525 @@
+{
+  "target": "strength_mpa",
+  "group_only_not_model_feature": "source_id",
+  "numeric_features": [
+    "component_pct__074e89909e",
+    "component_pct__0f96540098",
+    "component_pct__109945e6bc",
+    "component_pct__121302bb06",
+    "component_pct__180c9ee367",
+    "component_pct__18d2ce6d3a",
+    "component_pct__1e342bf129",
+    "component_pct__21560a4781",
+    "component_pct__2cba9f79a9",
+    "component_pct__2ecf0ba2b6",
+    "component_pct__3103a727c8",
+    "component_pct__33e49cbaac",
+    "component_pct__38501a8064",
+    "component_pct__39d519b1eb",
+    "component_pct__3d47433af9",
+    "component_pct__43a0f07043",
+    "component_pct__50712a7f22",
+    "component_pct__53c2ca84fc",
+    "component_pct__53e3d9f9fb",
+    "component_pct__543098b8ae",
+    "component_pct__5a658f3477",
+    "component_pct__5f4f6f5713",
+    "component_pct__65c7e9bcd6",
+    "component_pct__65f2ebcba3",
+    "component_pct__68816c0083",
+    "component_pct__6b81e51f51",
+    "component_pct__6e09d3ba5a",
+    "component_pct__7451cc7af4",
+    "component_pct__75c69fbf89",
+    "component_pct__76ac4e3b77",
+    "component_pct__7ab3e1078e",
+    "component_pct__7deb7b9036",
+    "component_pct__8051644a5e",
+    "component_pct__808c04bf83",
+    "component_pct__80c2b29d3c",
+    "component_pct__819129b7a8",
+    "component_pct__8c9ca8689b",
+    "component_pct__8d626a1777",
+    "component_pct__8e631bb56b",
+    "component_pct__8f2b2f9abf",
+    "component_pct__901a63e487",
+    "component_pct__99527d8235",
+    "component_pct__a14ef72d8d",
+    "component_pct__aa2caf9587",
+    "component_pct__ac08332d71",
+    "component_pct__af0428d2c4",
+    "component_pct__be02fa2ce8",
+    "component_pct__bece8eb949",
+    "component_pct__c24ee9bffc",
+    "component_pct__d94cd03c99",
+    "component_pct__dbb65cb462",
+    "component_pct__dd05e2729b",
+    "component_pct__ec3a5fa23c",
+    "component_pct__f6e1f8f291",
+    "component_pct__f8abd4a4a7",
+    "component_pct__f921a9cf0c",
+    "component_pct__ffcf317e82",
+    "role_pct__0070750362",
+    "role_pct__11d55bc4e4",
+    "role_pct__17a87ddd62",
+    "role_pct__1c9c77b4c1",
+    "role_pct__2fa67915a1",
+    "role_pct__3af1b6f644",
+    "role_pct__3b0a69bf29",
+    "role_pct__4112012f7c",
+    "role_pct__45fa2cce3e",
+    "role_pct__47689666f5",
+    "role_pct__4a67e7217b",
+    "role_pct__4e699544a9",
+    "role_pct__4fa63bc823",
+    "role_pct__502f1f7352",
+    "role_pct__51d5348e9f",
+    "role_pct__562b49803d",
+    "role_pct__62ce88e8d8",
+    "role_pct__63495fde64",
+    "role_pct__671ccc5610",
+    "role_pct__6fd073909a",
+    "role_pct__719209070a",
+    "role_pct__7e8b7557fd",
+    "role_pct__880ee994cd",
+    "role_pct__8f6bc27cf6",
+    "role_pct__9011a3e1f0",
+    "role_pct__908f3d319d",
+    "role_pct__a27b12870f",
+    "role_pct__ae0df7018a",
+    "role_pct__aefb1f8605",
+    "role_pct__b03b8f8e41",
+    "role_pct__b42c947ba9",
+    "role_pct__b878763d92",
+    "role_pct__bf2f749e80",
+    "role_pct__c0c24679a8",
+    "role_pct__db4bc9ade2",
+    "role_pct__ec246d357e",
+    "role_pct__f365bda6b7",
+    "role_pct__f6a7848763",
+    "role_pct__f859642bed",
+    "role_pct__f928985b58",
+    "test_speed_mm_min",
+    "test_temperature_C",
+    "relative_humidity_percent",
+    "process_temperature_min_C",
+    "process_temperature_max_C",
+    "process_screw_speed_rpm",
+    "process_duration_min_max"
+  ],
+  "categorical_features": [
+    "test_standard",
+    "test_temperature_status",
+    "test_state",
+    "processing_route",
+    "specimen_form"
+  ],
+  "component_feature_map": [
+    {
+      "feature_column": "component_pct__074e89909e",
+      "substance_id": "SUB_CARBON_BLACK",
+      "substance_name": "炭黑",
+      "family": "conductive_filler",
+      "formula": "C"
+    },
+    {
+      "feature_column": "component_pct__0f96540098",
+      "substance_id": "SUB_HYDROTALCITE",
+      "substance_name": "水滑石",
+      "family": "inorganic_filler",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__109945e6bc",
+      "substance_id": "SUB_POP_G_MAH",
+      "substance_name": "马来酸酐接枝聚烯烃塑性体",
+      "family": "grafted_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__121302bb06",
+      "substance_id": "SUB_STEARIC_ACID",
+      "substance_name": "硬脂酸",
+      "family": "organic_modifier",
+      "formula": "C18H36O2"
+    },
+    {
+      "feature_column": "component_pct__180c9ee367",
+      "substance_id": "SUB_AO168",
+      "substance_name": "抗氧剂168",
+      "family": "antioxidant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__18d2ce6d3a",
+      "substance_id": "SUB_SILICA",
+      "substance_name": "二氧化硅",
+      "family": "inorganic_filler",
+      "formula": "SiO2"
+    },
+    {
+      "feature_column": "component_pct__1e342bf129",
+      "substance_id": "SUB_CELLULOSE_MICROFIBER",
+      "substance_name": "纤维素微纤维",
+      "family": "cellulose_fiber",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__21560a4781",
+      "substance_id": "SUB_PP_G_MTMI",
+      "substance_name": "m-TMI接枝聚丙烯",
+      "family": "grafted_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__2cba9f79a9",
+      "substance_id": "SUB_SEPIOLITE",
+      "substance_name": "海泡石",
+      "family": "inorganic_fiber_mineral",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__2ecf0ba2b6",
+      "substance_id": "SUB_SEBS",
+      "substance_name": "苯乙烯-乙烯/丁烯-苯乙烯嵌段共聚物",
+      "family": "elastomer",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__3103a727c8",
+      "substance_id": "SUB_ALUMINUM_EFFECT_PIGMENT",
+      "substance_name": "铝粉效果颜料",
+      "family": "pigment",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__33e49cbaac",
+      "substance_id": "SUB_CTF_FIBER",
+      "substance_name": "Corypha taliera果纤维",
+      "family": "natural_fiber",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__38501a8064",
+      "substance_id": "SUB_FLAME_RETARDANT_MIX",
+      "substance_name": "溴-磷-氮复配阻燃剂（组成未披露）",
+      "family": "flame_retardant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__39d519b1eb",
+      "substance_id": "SUB_PBT",
+      "substance_name": "聚对苯二甲酸丁二醇酯",
+      "family": "polyester",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__3d47433af9",
+      "substance_id": "SUB_CALCIUM_STEARATE",
+      "substance_name": "硬脂酸钙",
+      "family": "lubricant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__43a0f07043",
+      "substance_id": "SUB_POP",
+      "substance_name": "聚烯烃塑性体",
+      "family": "polyolefin_plastomer",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__50712a7f22",
+      "substance_id": "SUB_IPC_G_MAH_CO_AD",
+      "substance_name": "MAH-co-AD接枝 impact PP",
+      "family": "functionalized_polypropylene",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__53c2ca84fc",
+      "substance_id": "SUB_WOLLASTONITE",
+      "substance_name": "硅灰石",
+      "family": "inorganic_filler",
+      "formula": "CaSiO3"
+    },
+    {
+      "feature_column": "component_pct__53e3d9f9fb",
+      "substance_id": "SUB_POE",
+      "substance_name": "聚烯烃弹性体",
+      "family": "polyolefin_elastomer",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__543098b8ae",
+      "substance_id": "SUB_BANANA_FIBER",
+      "substance_name": "香蕉纤维",
+      "family": "natural_fiber",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__5a658f3477",
+      "substance_id": "SUB_COMPOUND_STABILIZER_UNSPEC",
+      "substance_name": "复合稳定剂（组成未披露）",
+      "family": "stabilizer",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__5f4f6f5713",
+      "substance_id": "SUB_PULP",
+      "substance_name": "纸浆纤维",
+      "family": "natural_filler",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__65c7e9bcd6",
+      "substance_id": "SUB_ZINC_STEARATE",
+      "substance_name": "硬脂酸锌",
+      "family": "lubricant",
+      "formula": "C36H70O4Zn"
+    },
+    {
+      "feature_column": "component_pct__65f2ebcba3",
+      "substance_id": "SUB_PP",
+      "substance_name": "聚丙烯",
+      "family": "polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__68816c0083",
+      "substance_id": "SUB_AO1010",
+      "substance_name": "抗氧剂1010",
+      "family": "antioxidant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__6b81e51f51",
+      "substance_id": "SUB_LCBPP",
+      "substance_name": "长链支化聚丙烯",
+      "family": "branched_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__6e09d3ba5a",
+      "substance_id": "SUB_PP_G_MAH",
+      "substance_name": "马来酸酐接枝聚丙烯",
+      "family": "grafted_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__7451cc7af4",
+      "substance_id": "SUB_TALC",
+      "substance_name": "滑石粉",
+      "family": "inorganic_filler",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__75c69fbf89",
+      "substance_id": "SUB_TMB5",
+      "substance_name": "二环己基对苯二甲酰胺（文献TMB-5）",
+      "family": "beta_nucleating_agent",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__76ac4e3b77",
+      "substance_id": "SUB_PP_OH",
+      "substance_name": "羟基官能化聚丙烯",
+      "family": "functionalized_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__7ab3e1078e",
+      "substance_id": "SUB_BORONATE_CROSSLINKED_PPGMA",
+      "substance_name": "硼酸酯动态交联 PP-g-GMA（PGC）",
+      "family": "dynamic_crosslinked_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__7deb7b9036",
+      "substance_id": "SUB_KH550",
+      "substance_name": "γ-氨丙基三乙氧基硅烷",
+      "family": "silane_coupling_agent",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__8051644a5e",
+      "substance_id": "SUB_HOLLOW_GLASS_MICROSPHERES",
+      "substance_name": "空心玻璃微珠",
+      "family": "hollow_glass_microsphere",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__808c04bf83",
+      "substance_id": "SUB_MONTMORILLONITE",
+      "substance_name": "蒙脱土",
+      "family": "inorganic_filler",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__80c2b29d3c",
+      "substance_id": "SUB_AO_B215_UNSPEC",
+      "substance_name": "抗氧剂B215（组成未充分确认）",
+      "family": "antioxidant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__819129b7a8",
+      "substance_id": "SUB_CACO3",
+      "substance_name": "碳酸钙",
+      "family": "mineral_filler",
+      "formula": "CaCO3"
+    },
+    {
+      "feature_column": "component_pct__8c9ca8689b",
+      "substance_id": "SUB_COIR_FIBER",
+      "substance_name": "椰壳纤维",
+      "family": "natural_fiber",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__8d626a1777",
+      "substance_id": "SUB_RECYCLED_PP",
+      "substance_name": "再生聚丙烯",
+      "family": "recycled_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__8e631bb56b",
+      "substance_id": "SUB_PP_G_GMA",
+      "substance_name": "甲基丙烯酸缩水甘油酯接枝聚丙烯",
+      "family": "grafted_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__8f2b2f9abf",
+      "substance_id": "SUB_ZINC_ADIPATE",
+      "substance_name": "己二酸锌",
+      "family": "beta_nucleating_agent",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__901a63e487",
+      "substance_id": "SUB_SUGARCANE_BAGASSE",
+      "substance_name": "甘蔗渣纤维",
+      "family": "natural_filler",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__99527d8235",
+      "substance_id": "SUB_NANODIAMOND",
+      "substance_name": "纳米金刚石",
+      "family": "carbon_nanofiller",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__a14ef72d8d",
+      "substance_id": "SUB_PA6",
+      "substance_name": "聚酰胺6",
+      "family": "polymer_blend",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__aa2caf9587",
+      "substance_id": "SUB_STYRENE_GRAFTED_PP",
+      "substance_name": "苯乙烯接枝聚丙烯",
+      "family": "grafted_polyolefin",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__ac08332d71",
+      "substance_id": "SUB_SOYBEAN_OIL",
+      "substance_name": "大豆油",
+      "family": "vegetable_oil",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__af0428d2c4",
+      "substance_id": "SUB_SEBS_G_MAH",
+      "substance_name": "马来酸酐接枝SEBS",
+      "family": "grafted_compatibilizer",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__be02fa2ce8",
+      "substance_id": "SUB_APP",
+      "substance_name": "聚磷酸铵",
+      "family": "flame_retardant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__bece8eb949",
+      "substance_id": "SUB_POLYETHYLENE_WAX",
+      "substance_name": "聚乙烯蜡",
+      "family": "dispersant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__c24ee9bffc",
+      "substance_id": "SUB_SBR",
+      "substance_name": "丁苯橡胶",
+      "family": "elastomer",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__d94cd03c99",
+      "substance_id": "SUB_DIBUTYL_PHTHALATE",
+      "substance_name": "邻苯二甲酸二丁酯",
+      "family": "organic_diluent",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__dbb65cb462",
+      "substance_id": "SUB_MUSSEL_SHELL",
+      "substance_name": "贻贝壳粉",
+      "family": "biogenic_mineral_filler",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__dd05e2729b",
+      "substance_id": "SUB_BARIUM_SULFATE",
+      "substance_name": "硫酸钡",
+      "family": "oxide_filler",
+      "formula": "BaSO4"
+    },
+    {
+      "feature_column": "component_pct__ec3a5fa23c",
+      "substance_id": "SUB_NBR",
+      "substance_name": "丁腈橡胶",
+      "family": "elastomer",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__f6e1f8f291",
+      "substance_id": "SUB_COMPOUND_ANTIOXIDANT_UNSPEC",
+      "substance_name": "复配抗氧剂（组成未披露）",
+      "family": "antioxidant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__f8abd4a4a7",
+      "substance_id": "SUB_CARBON_FIBER",
+      "substance_name": "碳纤维",
+      "family": "reinforcement",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__f921a9cf0c",
+      "substance_id": "SUB_EBS",
+      "substance_name": "乙撑双硬脂酰胺",
+      "family": "lubricant",
+      "formula": null
+    },
+    {
+      "feature_column": "component_pct__ffcf317e82",
+      "substance_id": "SUB_GF",
+      "substance_name": "玻璃纤维",
+      "family": "glass_fiber",
+      "formula": null
+    }
+  ],
+  "scope": "include_in_general_model == 1; initial bulk PP modification cohort; see model_scope_summary_v1.csv",
+  "notes": [
+    "source_id is used only for grouped validation, never as a model feature.",
+    "Component amounts are aggregated by canonical substance_id; grade-specific information remains in components_json for traceability.",
+    "Missing test/process values remain missing and are imputed within each training fold.",
+    "The proposed cohort is exploratory and should be reviewed before production use."
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "validation": "Leave-one-paper-out; paper source_id used only as group",
+  "results": [
+    {
+      "scope": "all_initial_candidates_before_source_form_review",
+      "model": "Ridge_family",
+      "n_rows": 146,
+      "n_papers": 28,
+      "baseline_MAE": 6.905133303238317,
+      "baseline_RMSE": 8.773052505239079,
+      "baseline_R2": -0.06941339505048161,
+      "model_MAE": 8.087776278915921,
+      "model_RMSE": 10.445640096904365,
+      "model_R2": -0.5160526326366888,
+      "folds_model_beats_baseline_MAE": 14,
+      "folds_total": 28
+    },
+    {
+      "scope": "all_initial_candidates_before_source_form_review",
+      "model": "RandomForest_family",
+      "n_rows": 146,
+      "n_papers": 28,
+      "baseline_MAE": 6.905133303238317,
+      "baseline_RMSE": 8.773052505239079,
+      "baseline_R2": -0.06941339505048161,
+      "model_MAE": 6.376436430235024,
+      "model_RMSE": 8.323458714583191,
+      "model_R2": 0.03738677954903746,
+      "folds_model_beats_baseline_MAE": 18,
+      "folds_total": 28
+    },
+    {
+      "scope": "all_initial_candidates_before_source_form_review",
+      "model": "ExtraTrees_family",
+      "n_rows": 146,
+      "n_papers": 28,
+      "baseline_MAE": 6.905133303238317,
+      "baseline_RMSE": 8.773052505239079,
+      "baseline_R2": -0.06941339505048161,
+      "model_MAE": 6.241727203870172,
+      "model_RMSE": 8.293369781273112,
+      "model_R2": 0.04433380822776023,
+      "folds_model_beats_baseline_MAE": 19,
+      "folds_total": 28
+    },
+    {
+      "scope": "general_bulk_candidates_after_source_form_review",
+      "model": "Ridge_family",
+      "n_rows": 139,
+      "n_papers": 26,
+      "baseline_MAE": 6.4276637189589145,
+      "baseline_RMSE": 8.295282876873975,
+      "baseline_R2": -0.07551411223561555,
+      "model_MAE": 8.956649423574467,
+      "model_RMSE": 12.180288451166707,
+      "model_R2": -1.3188297251878915,
+      "folds_model_beats_baseline_MAE": 11,
+      "folds_total": 26
+    },
+    {
+      "scope": "general_bulk_candidates_after_source_form_review",
+      "model": "RandomForest_family",
+      "n_rows": 139,
+      "n_papers": 26,
+      "baseline_MAE": 6.4276637189589145,
+      "baseline_RMSE": 8.295282876873975,
+      "baseline_R2": -0.07551411223561555,
+      "model_MAE": 5.676226240768644,
+      "model_RMSE": 7.803452794002955,
+      "model_R2": 0.04824026554867833,
+      "folds_model_beats_baseline_MAE": 18,
+      "folds_total": 26
+    },
+    {
+      "scope": "general_bulk_candidates_after_source_form_review",
+      "model": "ExtraTrees_family",
+      "n_rows": 139,
+      "n_papers": 26,
+      "baseline_MAE": 6.4276637189589145,
+      "baseline_RMSE": 8.295282876873975,
+      "baseline_R2": -0.07551411223561555,
+      "model_MAE": 5.731752176336976,
+      "model_RMSE": 7.900629143838655,
+      "model_R2": 0.02438815316635512,
+      "folds_model_beats_baseline_MAE": 15,
+      "folds_total": 26
+    },
+    {
+      "scope": "form_unknown_or_not_reported",
+      "model": "Ridge_family",
+      "n_rows": 118,
+      "n_papers": 21,
+      "baseline_MAE": 6.656163074474486,
+      "baseline_RMSE": 8.008249712582947,
+      "baseline_R2": -0.10596548398347316,
+      "model_MAE": 13.23308928073377,
+      "model_RMSE": 19.12451684717032,
+      "model_R2": -5.307355416575286,
+      "folds_model_beats_baseline_MAE": 8,
+      "folds_total": 21
+    },
+    {
+      "scope": "form_unknown_or_not_reported",
+      "model": "RandomForest_family",
+      "n_rows": 118,
+      "n_papers": 21,
+      "baseline_MAE": 6.656163074474486,
+      "baseline_RMSE": 8.008249712582947,
+      "baseline_R2": -0.10596548398347316,
+      "model_MAE": 5.609962713118457,
+      "model_RMSE": 6.869005438827612,
+      "model_R2": 0.18631917775782258,
+      "folds_model_beats_baseline_MAE": 14,
+      "folds_total": 21
+    },
+    {
+      "scope": "form_unknown_or_not_reported",
+      "model": "ExtraTrees_family",
+      "n_rows": 118,
+      "n_papers": 21,
+      "baseline_MAE": 6.656163074474486,
+      "baseline_RMSE": 8.008249712582947,
+      "baseline_R2": -0.10596548398347316,
+      "model_MAE": 5.620210662679275,
+      "model_RMSE": 6.989001021702985,
+      "model_R2": 0.1576422660773631,
+      "folds_model_beats_baseline_MAE": 14,
+      "folds_total": 21
+    },
+    {
+      "scope": "form_molded_bulk",
+      "model": "Ridge_family",
+      "n_rows": 21,
+      "n_papers": 5,
+      "baseline_MAE": 6.352727956254274,
+      "baseline_RMSE": 9.49109503673212,
+      "baseline_R2": -0.3893168489643426,
+      "model_MAE": 11.984739045379708,
+      "model_RMSE": 13.695470156123383,
+      "model_R2": -1.8928275855439076,
+      "folds_model_beats_baseline_MAE": 0,
+      "folds_total": 5
+    },
+    {
+      "scope": "form_molded_bulk",
+      "model": "RandomForest_family",
+      "n_rows": 21,
+      "n_papers": 5,
+      "baseline_MAE": 6.352727956254274,
+      "baseline_RMSE": 9.49109503673212,
+      "baseline_R2": -0.3893168489643426,
+      "model_MAE": 9.211804418084542,
+      "model_RMSE": 11.16979193968768,
+      "model_R2": -0.9242381713470429,
+      "folds_model_beats_baseline_MAE": 0,
+      "folds_total": 5
+    },
+    {
+      "scope": "form_molded_bulk",
+      "model": "ExtraTrees_family",
+      "n_rows": 21,
+      "n_papers": 5,
+      "baseline_MAE": 6.352727956254274,
+      "baseline_RMSE": 9.49109503673212,
+      "baseline_R2": -0.3893168489643426,
+      "model_MAE": 5.892597636569694,
+      "model_RMSE": 9.358278177298955,
+      "model_R2": -0.3507051618160846,
+      "folds_model_beats_baseline_MAE": 2,
+      "folds_total": 5
+    },
+    {
+      "scope": "unknown_form_homopolymer_or_unspecified_matrix",
+      "model": "Ridge_family",
+      "n_rows": 113,
+      "n_papers": 20,
+      "baseline_MAE": 6.83339906095441,
+      "baseline_RMSE": 8.173261488842124,
+      "baseline_R2": -0.11173302330913715,
+      "model_MAE": 15.663519638260325,
+      "model_RMSE": 23.321791172966822,
+      "model_R2": -8.051770278840392,
+      "folds_model_beats_baseline_MAE": 8,
+      "folds_total": 20
+    },
+    {
+      "scope": "unknown_form_homopolymer_or_unspecified_matrix",
+      "model": "RandomForest_family",
+      "n_rows": 113,
+      "n_papers": 20,
+      "baseline_MAE": 6.83339906095441,
+      "baseline_RMSE": 8.173261488842124,
+      "baseline_R2": -0.11173302330913715,
+      "model_MAE": 5.4898911351698345,
+      "model_RMSE": 6.872371217077507,
+      "model_R2": 0.2139992877961484,
+      "folds_model_beats_baseline_MAE": 14,
+      "folds_total": 20
+    },
+    {
+      "scope": "unknown_form_homopolymer_or_unspecified_matrix",
+      "model": "ExtraTrees_family",
+      "n_rows": 113,
+      "n_papers": 20,
+      "baseline_MAE": 6.83339906095441,
+      "baseline_RMSE": 8.173261488842124,
+      "baseline_R2": -0.11173302330913715,
+      "model_MAE": 5.439682738429522,
+      "model_RMSE": 6.786460622200553,
+      "model_R2": 0.2335278380462602,
+      "folds_model_beats_baseline_MAE": 15,
+      "folds_total": 20
+    }
+  ],
+  "counts": {
+    "all_initial_candidates_before_source_form_review": {
+      "rows": 146,
+      "papers": 28
+    },
+    "general_bulk_candidates_after_source_form_review": {
+      "rows": 139,
+      "papers": 26
+    },
+    "form_unknown_or_not_reported": {
+      "rows": 118,
+      "papers": 21
+    },
+    "form_molded_bulk": {
+      "rows": 21,
+      "papers": 5
+    },
+    "unknown_form_homopolymer_or_unspecified_matrix": {
+      "rows": 113,
+      "papers": 20
+    }
+  },
+  "warning": "Exploratory internal evaluation, not independent external validation."
+}

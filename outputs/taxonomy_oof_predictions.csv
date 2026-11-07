@@ -1,0 +1,114 @@
+﻿measurement_id,source_id,paper_title,sample_label,actual_MPa,model_oof_MPa,mean_oof_MPa
+MEAS_P026_00034,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP,34.9,36.92784729373273,29.81470476190476
+MEAS_P026_00040,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP/Na-MMT5,35.2,35.91663143962735,29.81470476190476
+MEAS_P026_00046,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP/SMMT1,35.3,36.90785046545709,29.81470476190476
+MEAS_P026_00052,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP/SMMT3,35.7,36.368013011055936,29.81470476190476
+MEAS_P026_00058,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP/SMMT5,36.1,35.91663143962735,29.81470476190476
+MEAS_P026_00070,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP/TMB-5/SMMT1,31.9,36.74432694323486,29.81470476190476
+MEAS_P026_00076,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP/TMB-5/SMMT3,32.4,36.368013011055936,29.81470476190476
+MEAS_P026_00082,SRC_P026,A new method combining modification of montmorillonite and crystal regulation to enhance the mechanical properties of polypropylene,PP/TMB-5/SMMT5,33.1,35.91663143962735,29.81470476190476
+MEAS_P030_00044,SRC_P030,"Aminotrimethylene phosphonic acid and 1,10-diaminodecane modified ammonium polyphosphate for polypropylene composites with satisfactory flame retardancy and mechanical properties while maintaining transparency",APP25,8.9,27.75318662452546,30.293127272727276
+MEAS_P030_00047,SRC_P030,"Aminotrimethylene phosphonic acid and 1,10-diaminodecane modified ammonium polyphosphate for polypropylene composites with satisfactory flame retardancy and mechanical properties while maintaining transparency",APPDA25,21.67,27.75318662452546,30.293127272727276
+MEAS_P030_00041,SRC_P030,"Aminotrimethylene phosphonic acid and 1,10-diaminodecane modified ammonium polyphosphate for polypropylene composites with satisfactory flame retardancy and mechanical properties while maintaining transparency",PP,42.33,34.476516156959704,30.293127272727276
+MEAS_P103_00011,SRC_P103,Bioinspired surface modification of mussel shells and their application in polypropylene composites,PP / MAPP-MS 20 wt%,21.95,24.173804338859185,30.401045871559635
+MEAS_P103_00016,SRC_P103,Bioinspired surface modification of mussel shells and their application in polypropylene composites,PP / MAPP-MS 20 wt%,24.51,24.173804338859185,30.401045871559635
+MEAS_P103_00006,SRC_P103,Bioinspired surface modification of mussel shells and their application in polypropylene composites,PP / MS 20 wt%,21.16,29.874266635431255,30.401045871559635
+MEAS_P103_00001,SRC_P103,Bioinspired surface modification of mussel shells and their application in polypropylene composites,neat PP control,23.81,35.072160675323225,30.401045871559635
+MEAS_P105_00001,SRC_P105,Characteristic evaluation of polypropylene matrix composite reinforced with Corypha taliera fruit fibers,2 wt% NaOH treated CTF/PP 30:70 fiber:PP,17.19,26.57170144372296,30.388684684684687
+MEAS_P105_00005,SRC_P105,Characteristic evaluation of polypropylene matrix composite reinforced with Corypha taliera fruit fibers,2 wt% NaOH treated CTF/PP 50:50 fiber:PP,14.81,24.00733729431679,30.388684684684687
+MEAS_P066_00109,SRC_P066,Cross-Linking Modification of Ammonium Polyphosphate via Ionic Exchange and Self-Assembly for Enhancing the Fire Safety Properties of Polypropylene,APP25,25.3,25.77005040259744,30.112218181818182
+MEAS_P066_00112,SRC_P066,Cross-Linking Modification of Ammonium Polyphosphate via Ionic Exchange and Self-Assembly for Enhancing the Fire Safety Properties of Polypropylene,MAPP25,28.4,25.77005040259744,30.112218181818182
+MEAS_P066_00106,SRC_P066,Cross-Linking Modification of Ammonium Polyphosphate via Ionic Exchange and Self-Assembly for Enhancing the Fire Safety Properties of Polypropylene,PURE,39.1,35.831371484210266,30.112218181818182
+MEAS_P060_00007,SRC_P060,"High-quality modification of general polypropylene by the synergistic effect of zinc adipate, hydrotalcite, and polypropylene (SP179)",HT_ZNAA_0_1,39.26,35.050112842407586,30.052535714285714
+MEAS_P124_00005,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/ND 0.1 wt%,34.0,33.261370428016434,29.72253846153846
+MEAS_P124_00008,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/ND 0.3 wt%,34.0,33.30679584071485,29.72253846153846
+MEAS_P124_00011,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/ND 0.5 wt%,37.0,33.30679584071485,29.72253846153846
+MEAS_P124_00014,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/ND 1.0 wt%,38.0,33.16190442007992,29.72253846153846
+MEAS_P124_00017,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/NDODA 0.1 wt%,32.0,33.261370428016434,29.72253846153846
+MEAS_P124_00020,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/NDODA 0.3 wt%,37.0,33.30679584071485,29.72253846153846
+MEAS_P124_00023,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/NDODA 0.5 wt%,37.0,33.30679584071485,29.72253846153846
+MEAS_P124_00026,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,PP/NDODA 1.0 wt%,34.0,33.16190442007992,29.72253846153846
+MEAS_P124_00002,SRC_P124,Hydrophobization of nanodiamond for polypropylene nanocomposites,neat PP,31.0,34.045086617748915,29.72253846153846
+MEAS_P056_00002,SRC_P056,Interfacial crystals morphology modification in cellulose fiber/polypropylene composite by mechanochemical method,PP,38.51,35.553539159984474,29.665831775700937
+MEAS_P056_00005,SRC_P056,Interfacial crystals morphology modification in cellulose fiber/polypropylene composite by mechanochemical method,PP_10CACO3,38.2,29.232050843190148,29.665831775700937
+MEAS_P056_00008,SRC_P056,Interfacial crystals morphology modification in cellulose fiber/polypropylene composite by mechanochemical method,PP_10CP,37.13,30.864003151581777,29.665831775700937
+MEAS_P056_00011,SRC_P056,Interfacial crystals morphology modification in cellulose fiber/polypropylene composite by mechanochemical method,PP_10MCP,40.41,30.864003151581777,29.665831775700937
+MEAS_P056_00017,SRC_P056,Interfacial crystals morphology modification in cellulose fiber/polypropylene composite by mechanochemical method,PP_20MCP,33.42,30.88384533109113,29.665831775700937
+MEAS_P056_00014,SRC_P056,Interfacial crystals morphology modification in cellulose fiber/polypropylene composite by mechanochemical method,PP_5MCP,43.23,34.647519333433266,29.665831775700937
+MEAS_P144_00009,SRC_P144,SIVO408改性硅灰石在聚丙烯树脂中的应用研究,wollastonite 0 phr,22.818,33.665998130036634,30.368363636363632
+MEAS_P144_00010,SRC_P144,SIVO408改性硅灰石在聚丙烯树脂中的应用研究,wollastonite 20 phr,21.555,28.804615412032426,30.368363636363632
+MEAS_P144_00011,SRC_P144,SIVO408改性硅灰石在聚丙烯树脂中的应用研究,wollastonite 30 phr,20.251,23.47072551781552,30.368363636363632
+MEAS_P114_00001,SRC_P114,Surface modification of sepiolite: effects on thermomechanical properties of PP/PA6 blends,PP 100/PA6 0/O-Sep 0 wt%,34.4,35.467099192557114,30.204149532710275
+MEAS_P114_00026,SRC_P114,Surface modification of sepiolite: effects on thermomechanical properties of PP/PA6 blends,PP 70/PA6 23/O-Sep 7 wt%,29.2,23.652614237529132,30.204149532710275
+MEAS_P114_00021,SRC_P114,Surface modification of sepiolite: effects on thermomechanical properties of PP/PA6 blends,PP 70/PA6 25/O-Sep 5 wt%,28.0,23.69283823752913,30.204149532710275
+MEAS_P114_00016,SRC_P114,Surface modification of sepiolite: effects on thermomechanical properties of PP/PA6 blends,PP 70/PA6 27/O-Sep 3 wt%,27.4,23.69283823752913,30.204149532710275
+MEAS_P114_00011,SRC_P114,Surface modification of sepiolite: effects on thermomechanical properties of PP/PA6 blends,PP 70/PA6 29/O-Sep 1 wt%,27.2,23.69283823752913,30.204149532710275
+MEAS_P114_00006,SRC_P114,Surface modification of sepiolite: effects on thermomechanical properties of PP/PA6 blends,PP 70/PA6 30/O-Sep 0 wt%,27.1,23.70455089481629,30.204149532710275
+MEAS_P079_00002,SRC_P079,The effect of compatibiliser on the mechanical properties and electrical properties of polypropylene/carbon black conductive polymer composites,PP85_CB10_MAPP5,24.81,35.374802872932634,30.219855855855855
+MEAS_P079_00001,SRC_P079,The effect of compatibiliser on the mechanical properties and electrical properties of polypropylene/carbon black conductive polymer composites,PP90_CB5_MAPP5,25.93,35.57816758272284,30.219855855855855
+MEAS_P167_00028,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 10: banana 10 wt%, NaHCO3 3 wt%, pressure 2 MPa",37.89,29.524482033161277,28.954891089108912
+MEAS_P167_00031,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 11: banana 10 wt%, NaHCO3 6 wt%, pressure 0.5 MPa",39.55,29.524482033161277,28.954891089108912
+MEAS_P167_00034,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 12: banana 10 wt%, NaHCO3 9 wt%, pressure 1 MPa",46.02,29.524482033161277,28.954891089108912
+MEAS_P167_00037,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 13: banana 12.5 wt%, NaHCO3 0 wt%, pressure 2 MPa",34.12,28.95076865538352,28.954891089108912
+MEAS_P167_00040,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 14: banana 12.5 wt%, NaHCO3 3 wt%, pressure 1.5 MPa",44.34,28.95076865538352,28.954891089108912
+MEAS_P167_00043,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 15: banana 12.5 wt%, NaHCO3 6 wt%, pressure 1 MPa",48.44,28.95076865538352,28.954891089108912
+MEAS_P167_00046,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 16: banana 12.5 wt%, NaHCO3 9 wt%, pressure 0.5 MPa",40.67,28.95076865538352,28.954891089108912
+MEAS_P167_00013,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 5: banana 7.5 wt%, NaHCO3 0 wt%, pressure 1 MPa",31.01,34.32275578623597,28.954891089108912
+MEAS_P167_00016,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 6: banana 7.5 wt%, NaHCO3 3 wt%, pressure 0.5 MPa",36.29,34.32275578623597,28.954891089108912
+MEAS_P167_00019,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 7: banana 7.5 wt%, NaHCO3 6 wt%, pressure 2 MPa",45.22,34.32275578623597,28.954891089108912
+MEAS_P167_00022,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 8: banana 7.5 wt%, NaHCO3 9 wt%, pressure 1.5 MPa",43.53,34.32275578623597,28.954891089108912
+MEAS_P167_00025,SRC_P167,The effect of sodium bicarbonate (NaHCO3) treated banana fibre on water absorption and mechanical properties of polypropylene composites using Taguchi based grey relational analysis,"Taguchi trial 9: banana 10 wt%, NaHCO3 0 wt%, pressure 1.5 MPa",33.62,29.524482033161277,28.954891089108912
+MEAS_P168_00021,SRC_P168,The influence of calcium carbonate and its modifications on the extrusion process and selected properties of polypropylene cast films,MC10,28.9,35.45993113232324,30.133127272727275
+MEAS_P168_00019,SRC_P168,The influence of calcium carbonate and its modifications on the extrusion process and selected properties of polypropylene cast films,PP,39.3,35.782794815118244,30.133127272727275
+MEAS_P168_00020,SRC_P168,The influence of calcium carbonate and its modifications on the extrusion process and selected properties of polypropylene cast films,UC10,22.3,35.45993113232324,30.133127272727275
+MEAS_P078_00001,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP,36.4,31.24408533616383,30.39168932038835
+MEAS_P078_00006,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP1,23.9,26.408939544855134,30.39168932038835
+MEAS_P078_00012,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP2,27.84,28.39340840480629,30.39168932038835
+MEAS_P078_00018,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP3,28.7,27.826878751282045,30.39168932038835
+MEAS_P078_00024,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP4,27.2,26.47523381726051,30.39168932038835
+MEAS_P078_00030,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP5,24.71,26.330982636308132,30.39168932038835
+MEAS_P078_00036,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP6,24.05,26.462051870251962,30.39168932038835
+MEAS_P078_00042,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP7,22.23,25.90218840985125,30.39168932038835
+MEAS_P078_00048,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP8,21.67,26.462051870251962,30.39168932038835
+MEAS_P078_00054,SRC_P078,The synergistic enhancement of flame retardancy and mechanical properties of polypropylene by phosphorus/nitrogen-modified nano-calcium carbonate,PP9,38.1,28.016962728643563,30.39168932038835
+MEAS_P170_00034,SRC_P170,Topologically reconfigurable polypropylene composites: Boronic ester crosslinking for concurrent mechanical reinforcement and circular reprocessability,PP_CONTROL,32.2,37.129376901554025,30.182146788990824
+MEAS_P170_00042,SRC_P170,Topologically reconfigurable polypropylene composites: Boronic ester crosslinking for concurrent mechanical reinforcement and circular reprocessability,PP_PGC2_70_30,31.7,20.432503178138504,30.182146788990824
+MEAS_P170_00038,SRC_P170,Topologically reconfigurable polypropylene composites: Boronic ester crosslinking for concurrent mechanical reinforcement and circular reprocessability,PP_PPGMA_70_30,25.3,20.432503178138504,30.182146788990824
+MEAS_P170_00002,SRC_P170,Topologically reconfigurable polypropylene composites: Boronic ester crosslinking for concurrent mechanical reinforcement and circular reprocessability,commercial PP-g-GMA,26.09,34.01452744717503,30.182146788990824
+MEAS_P095_00018,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,BX-1250 CaCO3 at 20 wt%,31.9,27.73153351980797,30.34860952380952
+MEAS_P095_00025,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,BX-1250 CaCO3 at 40 wt%,21.78,20.10067070032744,30.34860952380952
+MEAS_P095_00004,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,CC-1250 CaCO3 at 20 wt%,34.68,27.73153351980797,30.34860952380952
+MEAS_P095_00011,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,CC-1250 CaCO3 at 40 wt%,24.8,20.10067070032744,30.34860952380952
+MEAS_P095_00046,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,HC-1250 CaCO3 at 20 wt%,30.39,27.73153351980797,30.34860952380952
+MEAS_P095_00053,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,HC-1250 CaCO3 at 40 wt%,20.18,20.10067070032744,30.34860952380952
+MEAS_P095_00032,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,LZ-1250 CaCO3 at 20 wt%,32.37,27.73153351980797,30.34860952380952
+MEAS_P095_00039,SRC_P095,不同原矿加工的重质碳酸钙改性聚丙烯的综合研究,LZ-1250 CaCO3 at 40 wt%,22.44,20.10067070032744,30.34860952380952
+MEAS_P094_00002,SRC_P094,不同粒径的滑石粉改性聚丙烯的性能研究,PP/Talc HS338_20; full batch recipe in grams,28.99,33.06754986742011,30.039471698113204
+MEAS_P094_00003,SRC_P094,不同粒径的滑石粉改性聚丙烯的性能研究,PP/Talc HS638_20; full batch recipe in grams,32.96,33.06754986742011,30.039471698113204
+MEAS_P094_00004,SRC_P094,不同粒径的滑石粉改性聚丙烯的性能研究,PP/Talc HS738_20; full batch recipe in grams,32.49,33.06754986742011,30.039471698113204
+MEAS_P094_00005,SRC_P094,不同粒径的滑石粉改性聚丙烯的性能研究,PP/Talc HS738_30; full batch recipe in grams,32.65,22.610690389077565,30.039471698113204
+MEAS_P094_00006,SRC_P094,不同粒径的滑石粉改性聚丙烯的性能研究,PP/Talc HS738_40; full batch recipe in grams,31.08,22.18287075772002,30.039471698113204
+MEAS_P094_00007,SRC_P094,不同粒径的滑石粉改性聚丙烯的性能研究,PP/Talc HS738_50; full batch recipe in grams,31.09,21.25444060611054,30.039471698113204
+MEAS_P094_00001,SRC_P094,不同粒径的滑石粉改性聚丙烯的性能研究,T30S PP comparison sample,31.7,37.00860765896197,30.039471698113204
+MEAS_P093_00057,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8677 composition,23.2,26.630454185053825,31.20043137254902
+MEAS_P093_00002,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8842 composition,23.5,26.630454185053825,31.20043137254902
+MEAS_P093_00003,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8842 composition,21.6,26.62470918505383,31.20043137254902
+MEAS_P093_00004,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8842 composition,21.1,25.87336827711733,31.20043137254902
+MEAS_P093_00005,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8842 composition,18.0,24.97866338707403,31.20043137254902
+MEAS_P093_00006,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8842 composition,16.0,24.633623511244295,31.20043137254902
+MEAS_P093_00007,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8842 composition,14.4,24.633623511244295,31.20043137254902
+MEAS_P093_00008,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/8842 composition,12.9,24.633623511244295,31.20043137254902
+MEAS_P093_00063,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/9107 composition,22.9,26.630454185053825,31.20043137254902
+MEAS_P093_00069,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/V6202 composition,23.8,26.630454185053825,31.20043137254902
+MEAS_P093_00001,SRC_P093,不同聚烯烃弹性体增韧改性对聚丙烯/滑石粉复合材料的影响,PP/talc/no POE composition,25.3,27.186770599999974,31.20043137254902
+MEAS_P100_00003,SRC_P100,改性甘蔗渣纤维对聚丙烯复合材料的性能影响,"PP/BF 80/20, BF surface treatment KH550",31.4,27.89830345840822,29.81456603773585
+MEAS_P100_00009,SRC_P100,改性甘蔗渣纤维对聚丙烯复合材料的性能影响,"PP/BF 80/20, BF surface treatment KH560",35.4,27.89830345840822,29.81456603773585
+MEAS_P100_00015,SRC_P100,改性甘蔗渣纤维对聚丙烯复合材料的性能影响,"PP/BF 80/20, BF surface treatment KH570",34.5,27.89830345840822,29.81456603773585
+MEAS_P100_00033,SRC_P100,改性甘蔗渣纤维对聚丙烯复合材料的性能影响,"PP/BF 80/20, BF surface treatment KMNO4_05",40.1,27.89830345840822,29.81456603773585
+MEAS_P100_00027,SRC_P100,改性甘蔗渣纤维对聚丙烯复合材料的性能影响,"PP/BF 80/20, BF surface treatment KMNO4_1",39.4,27.89830345840822,29.81456603773585
+MEAS_P100_00021,SRC_P100,改性甘蔗渣纤维对聚丙烯复合材料的性能影响,"PP/BF 80/20, BF surface treatment KMNO4_2",37.9,27.89830345840822,29.81456603773585
+MEAS_P100_00001,SRC_P100,改性甘蔗渣纤维对聚丙烯复合材料的性能影响,PP/BF mass fraction 60/40 (untreated fibre),26.1,24.188478800199814,29.81456603773585
+MEAS_P176_00009,SRC_P176,聚对苯二甲酸丁二醇酯共混改性聚丙烯的耐热性能研究,PP/PBT blend mass parts 70/30 + PP-g-MAH 10,20.57,23.446697574303457,30.31966972477064
+MEAS_P176_00001,SRC_P176,聚对苯二甲酸丁二醇酯共混改性聚丙烯的耐热性能研究,PP/PBT blend mass parts 70/30 + SEBS-g-MAH 10,22.87,23.446697574303457,30.31966972477064
+MEAS_P176_00013,SRC_P176,聚对苯二甲酸丁二醇酯共混改性聚丙烯的耐热性能研究,PP/PBT blend mass parts 80/20 + PP-g-MAH 10,26.83,24.050665589249615,30.31966972477064
+MEAS_P176_00005,SRC_P176,聚对苯二甲酸丁二醇酯共混改性聚丙烯的耐热性能研究,PP/PBT blend mass parts 80/20 + SEBS-g-MAH 10,30.03,24.050665589249615,30.31966972477064

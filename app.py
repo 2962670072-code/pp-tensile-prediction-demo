@@ -1,428 +1,298 @@
 from __future__ import annotations
-
-import json
+import difflib, json, re, unicodedata
 from pathlib import Path
-
 import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
 
-ROOT = Path(__file__).resolve().parent
-DATA_DIR = ROOT / "data"
-OUTPUT_DIR = ROOT / "outputs"
-MODEL_PATH = OUTPUT_DIR / "experimental_ridge_model.joblib"
-FEATURES_PATH = DATA_DIR / "feature_manifest.json"
-TRAINING_DATA_PATH = DATA_DIR / "model_input_features_v0.csv"
-METRICS_PATH = OUTPUT_DIR / "metrics.json"
-
-st.set_page_config(
-    page_title="聚丙烯拉伸强度预测原型",
-    page_icon="🧪",
-    layout="wide",
-)
-
-NUMERIC_LABELS = {
-    "test_speed_mm_min": "拉伸测试速度（mm/min）",
-    "extrusion_temp_min_C": "挤出温度下限（°C）",
-    "extrusion_temp_max_C": "挤出温度上限（°C）",
-    "extruder_screw_speed_rpm": "挤出机螺杆转速（rpm）",
-    "injection_temp_min_C": "注塑温度下限（°C）",
-    "injection_temp_max_C": "注塑温度上限（°C）",
-    "mold_temp_C": "模具温度（°C）",
-    "post_anneal_temp_C": "退火温度（°C）",
-    "post_anneal_time_h": "退火时间（h）",
-    "conditioning_temp_C": "试样调节温度（°C）",
-    "conditioning_rh_pct": "试样调节相对湿度（%）",
-    "conditioning_time_h": "试样调节时间（h）",
-    "mixing_temp_min_C": "混合温度下限（°C）",
-    "mixing_temp_max_C": "混合温度上限（°C）",
-    "mixer_speed_rpm": "混合设备转速（rpm）",
-    "mixing_time_min": "混合时间（min）",
-    "injection_pressure_bar": "注射压力（bar）",
-    "holding_time_s": "保压时间（s）",
-}
-
-CATEGORY_LABELS = {
-    "processing_route": "成型方式",
-    "compounding_route": "共混/造粒方式",
-    "processing_variant": "具体改性/加工路线",
-    "test_standard": "拉伸测试标准",
-    "test_temperature_status": "测试温度报告情况",
-}
-
-CATEGORY_TRANSLATIONS = {
-    "not_reported": "未报告/未提供",
-    "injection_molding": "常规注塑",
-    "micro_injection_molding": "微注塑",
-    "twin_screw_compounding": "双螺杆共混",
-    "twin_screw_extrusion": "双螺杆挤出",
-    "carbon_fiber_interphase_treatment_pair": "碳纤维界面处理对照组",
-    "direct_compounding_no_compatibilizer": "直接共混，不加相容剂",
-    "direct_compounding_with_PP_g_m_TMI": "直接共混，加入 PP-g-m-TMI",
-    "micro_injection_then_annealing": "微注塑后退火",
-    "neat_control": "纯 PP 对照",
-    "standard_extruded_compound": "常规挤出共混",
-    "three_step_masterbatch_no_PP_g_m_TMI": "三步母粒法，不加 PP-g-m-TMI",
-    "three_step_masterbatch_with_PP_g_m_TMI": "三步母粒法，加入 PP-g-m-TMI",
-    "reported_room_temperature": "报告为室温",
-    "ASTM D638": "ASTM D638",
-    "ASTM D638-2014": "ASTM D638-2014",
-    "GB/T 1040.2-2006": "GB/T 1040.2-2006",
-    "GB/T 1040—2018（按原文；分册未报告）": "GB/T 1040—2018（原文未报告分册）",
-    "ISO 527-1:2019": "ISO 527-1:2019",
-}
-
-COMPONENT_LABELS = {
-    "Antioxidant B215": "抗氧剂 B215（Antioxidant B215）",
-    "PP-g-m-TMI": "PP-g-m-TMI 相容剂",
-    "Al effect pigment, grade/particle size not identified": "铝效应颜料（牌号/粒径未报告）",
-    "Barium sulfate": "硫酸钡（BaSO₄）",
-    "Calcium carbonate": "碳酸钙（CaCO₃）",
-    "Fe3+/硬脂酸改性蒙脱土 SMMT": "Fe³⁺/硬脂酸改性蒙脱土 SMMT",
-    "Na-MMT PGW": "钠基蒙脱土 Na-MMT PGW",
-    "Talc": "滑石粉",
-    "纸浆粉": "纸浆粉",
-    "Bromine-phosphorus-nitrogen flame-retardant blend": "溴-磷-氮复合阻燃剂",
-    "Calcium stearate": "硬脂酸钙",
-    "EBS lubricant": "EBS 润滑剂",
-    "PP BX3900": "PP BX3900（聚丙烯基体）",
-    "PP HP500N-Z homopolymer": "均聚 PP HP500N-Z（聚丙烯基体）",
-    "PP M1100": "PP M1100（聚丙烯基体）",
-    "均聚PP基体": "均聚 PP（具体牌号未报告）",
-    "嵌段共聚PP BB110": "嵌段共聚 PP BB110（聚丙烯基体）",
-    "等规聚丙烯 T30S": "等规 PP T30S（聚丙烯基体）",
-    "TMB-5": "成核剂 TMB-5",
-    "Antioxidant 1010": "抗氧剂 1010",
-    "T-700 desized carbon fiber": "脱浆 T-700 碳纤维",
-    "n-butylphenyl-functionalized T-700 carbon fiber": "正丁基苯基官能化 T-700 碳纤维",
-    "Antioxidant 168": "抗氧剂 168",
-}
-
-ROLE_LABELS = {
-    "matrix": "PP基体",
-    "filler": "填料",
-    "reinforcement": "增强材料",
-    "flame retardant": "阻燃剂",
-    "compatibilizer": "相容剂",
-    "antioxidant": "抗氧剂/稳定剂",
-    "primary antioxidant": "主抗氧剂",
-    "secondary antioxidant": "辅助抗氧剂",
-    "lubricant": "润滑剂",
-    "nucleating_agent": "成核剂",
-    "effect pigment": "颜料",
-}
-
+ROOT=Path(__file__).resolve().parent
+DATA=ROOT/'data'; OUT=ROOT/'outputs'
+st.set_page_config(page_title='聚丙烯改性预测与文献依据',page_icon='🧪',layout='wide')
 
 @st.cache_data
-def load_inputs():
-    manifest = json.loads(FEATURES_PATH.read_text(encoding="utf-8"))
-    training = pd.read_csv(TRAINING_DATA_PATH, encoding="utf-8-sig")
-    metrics = json.loads(METRICS_PATH.read_text(encoding="utf-8")) if METRICS_PATH.exists() else {}
-    return manifest, training, metrics
-
+def load_data():
+    manifest=json.loads((OUT/'taxonomy_model_manifest.json').read_text(encoding='utf-8'))
+    metrics=json.loads((OUT/'taxonomy_model_metrics.json').read_text(encoding='utf-8'))
+    refs=pd.read_csv(DATA/'model_reference_records.csv',encoding='utf-8-sig',low_memory=False).fillna('')
+    catalog=json.loads((DATA/'substance_catalog.json').read_text(encoding='utf-8'))
+    measurements=pd.read_csv(DATA/'literature_measurements.csv',encoding='utf-8-sig',low_memory=False).fillna('')
+    inventory=pd.read_csv(DATA/'property_inventory.csv',encoding='utf-8-sig').fillna('')
+    taxonomy=json.loads((DATA/'classification_taxonomy_v1.json').read_text(encoding='utf-8'))
+    return manifest,metrics,refs,catalog,measurements,inventory,taxonomy
 
 @st.cache_resource
 def load_model():
-    return joblib.load(MODEL_PATH)
+    return joblib.load(OUT/'experimental_taxonomy_rf.joblib')
 
+def norm(s):
+    s=unicodedata.normalize('NFKC',str(s or '')).strip().lower()
+    return re.sub(r'[\s_\-‐‑–—·,，。()（）\[\]{}]','',s)
 
-def category_display(value: str) -> str:
-    return CATEGORY_TRANSLATIONS.get(value, value)
+def alias_index(catalog):
+    out={}
+    for item in catalog:
+        for value in [item.get('id'),item.get('name'),item.get('formula'),*item.get('aliases',[])]:
+            if value: out.setdefault(norm(value),item)
+    return out
 
+def match_substance(value,index):
+    key=norm(value)
+    if key in index:return index[key],'exact'
+    close=difflib.get_close_matches(key,list(index),n=4,cutoff=.72) if key else []
+    return ([index[k] for k in close],'suggestions') if close else (None,'none')
 
-def parse_optional_number(raw: str, label: str):
-    raw = raw.strip()
-    if not raw:
-        return np.nan, None
-    try:
-        value = float(raw.replace(",", "."))
-    except ValueError:
-        return np.nan, f"“{label}”需要填写数字，例如 200 或 10.5。"
-    if not np.isfinite(value):
-        return np.nan, f"“{label}”不是有效数字。"
-    return value, None
+def parse_optional(value):
+    if not str(value or '').strip():return np.nan
+    x=float(str(value).replace(',','.'))
+    if not np.isfinite(x):raise ValueError
+    return x
 
+def format_formula(comps):
+    out=[]
+    for c in comps:
+        name=c.get('material_name') or c.get('substance_name') or c.get('substance_id') or '未知物质'
+        wt=c.get('wt_pct')
+        out.append(f"{name} {float(wt):g} wt%" if wt not in (None,'') else name)
+    return '；'.join(out)
 
-def component_group(role: str) -> str:
-    if role == "matrix":
-        return "PP基体"
-    if role in ("filler", "reinforcement"):
-        return "填料与增强材料"
-    return "助剂与其他组分"
+def rank_literature(input_comps,conditions,refs,role_map):
+    def vec(comps):
+        sid={};family={};function={}
+        for c in comps:
+            wt=float(c.get('wt_pct') or 0)
+            k=str(c.get('substance_id') or 'unknown');sid[k]=sid.get(k,0)+wt
+            k='family_wt__'+str(c.get('substance_family') or 'unknown');family[k]=family.get(k,0)+wt
+            role=' '.join(str(c.get('role') or 'unknown').replace('_',' ').split()).lower()
+            fn=role_map.get(role,role if role in role_map.values() else 'other_function')
+            k='function_wt__'+fn;function[k]=function.get(k,0)+wt
+        return sid,family,function
+    def l1(a,b):return min(1.0,sum(abs(a.get(k,0)-b.get(k,0)) for k in set(a)|set(b))/200.0)
+    us,uf,un=vec(input_comps)
+    condition_cols=[('test_standard','test_standard','cat'),('processing_route','processing_route','cat'),
+        ('test_speed_mm_min','test_speed_mm_min','num'),('test_temperature_C','test_temperature_C','num'),
+        ('relative_humidity_percent','relative_humidity_percent','num'),('process_temperature_min_C','process_temperature_min_C','num'),
+        ('process_temperature_max_C','process_temperature_max_C','num'),('process_screw_speed_rpm','process_screw_speed_rpm','num'),
+        ('process_duration_min_max','process_duration_min_max','num')]
+    ranges={}
+    for _,col,kind in condition_cols:
+        if kind=='num' and col in refs:
+            v=pd.to_numeric(refs[col],errors='coerce').dropna()
+            ranges[col]=max(float(v.max()-v.min()),1e-9) if len(v)>1 else 1.0
+    results=[]
+    for _,r in refs.iterrows():
+        try:comps=json.loads(r.get('components_json') or '[]')
+        except Exception:comps=[]
+        rs,rf,rn=vec(comps)
+        comp_dist=.5*l1(us,rs)+.3*l1(uf,rf)+.2*l1(un,rn)
+        dcond=[];exact=0;coverage=0
+        for ik,rk,kind in condition_cols:
+            a=conditions.get(ik);b=r.get(rk)
+            if kind=='cat':
+                if not a or not b:continue
+                coverage+=1;same=str(a).strip().lower()==str(b).strip().lower();dcond.append(0 if same else 1);exact+=int(same)
+            else:
+                try:a=float(a);b=float(b)
+                except (ValueError,TypeError):continue
+                if not np.isfinite(a) or not np.isfinite(b):continue
+                coverage+=1;dcond.append(min(1,abs(a-b)/ranges.get(rk,1.0)))
+        condition_dist=float(np.mean(dcond)) if dcond else np.nan
+        total=.75*comp_dist+.25*(condition_dist if np.isfinite(condition_dist) else comp_dist)
+        shared_ids=(set(us)&set(rs)) - {'SUB_PP'}
+        shared=[c.get('substance_name') or c.get('substance_id') for c in input_comps if c.get('substance_id') in shared_ids]
+        item=r.to_dict();item['_components']=comps;item['_composition_distance']=comp_dist
+        item['_condition_distance']=condition_dist;item['_condition_coverage']=coverage;item['_condition_exact_matches']=exact;item['_rank_distance']=total
+        item['_shared_additives']=list(dict.fromkeys(shared));item['_has_exact_additive']=bool(shared_ids)
+        results.append(item)
+    results.sort(key=lambda x:(not x['_has_exact_additive'],-len(x['_shared_additives']),x['_rank_distance']))
+    # Show distinct papers rather than several formulation rows from a single paper.
+    unique=[];seen=set()
+    for item in results:
+        source=str(item.get('source_id') or '')
+        if source in seen:continue
+        unique.append(item);seen.add(source)
+        if len(unique)==3:break
+    return unique
 
+def show_evidence(r,n):
+    title=str(r.get('paper_title') or r.get('paper_title_db') or '题名未收录')
+    sample=str(r.get('sample_label') or r.get('source_sample') or '样品编号未报告')
+    value=r.get('strength_mpa',r.get('value',''))
+    doi=str(r.get('doi') or r.get('doi_db') or '').strip()
+    d=r['_rank_distance']
+    if r.get('_has_exact_additive'):label='含相同添加物的文献'
+    else:label='未含相同添加物，按类别/比例作参考'
+    with st.expander(f"{n}. {title}｜{sample}｜实测 {value} MPa｜{label}",expanded=(n==1)):
+        st.markdown(f"**DOI：** [{doi}](https://doi.org/{doi})" if doi else '**DOI：** 数据库未收录')
+        st.write(f"**记录：** 文献 {r.get('source_id','')}；测量 {r.get('measurement_id','')}")
+        st.write(f"**配方：** {format_formula(r['_components'])}")
+        st.write('**与本次输入相同的添加物：** '+('、'.join(r['_shared_additives']) if r.get('_shared_additives') else '无；此条是模型特征距离较近的扩展参考，不是同一添加物的直接文献证据。'))
+        st.write(f"**实测拉伸强度：** {value} {r.get('unit','MPa')}；标准：{r.get('test_standard') or r.get('standard') or '未报告'}；速度：{r.get('test_speed_mm_min') or '未报告'} mm/min；测试温度：{r.get('test_temperature_C') or '未报告'} °C")
+        st.write(f"**加工/试样：** {r.get('processing_route') or '未报告'}；加工温度 {r.get('process_temperature_min_C') or '未报告'}–{r.get('process_temperature_max_C') or '未报告'} °C；试样 {r.get('specimen_json') or r.get('specimen_description') or '未报告'}")
+        locs=[('文献文件',r.get('source_locator') or r.get('数据库文献定位')),('强度原文定位',r.get('拉伸强度原文定位') or r.get('evidence_locator') or r.get('review_evidence')),('配方原文定位',r.get('配方原文定位')),('加工/测试方法定位',r.get('加工/制样定位') or r.get('condition_override_evidence'))]
+        for label,value in locs:
+            if value:st.write(f'**{label}：** {value}')
+        st.caption(f"排序信息：配方组成距离 {r['_composition_distance']:.3f}（越低越近）；可比较条件 {r['_condition_coverage']} 项，分类条件一致 {r['_condition_exact_matches']} 项。距离不是预测概率或置信度。")
 
-st.title("聚丙烯改性配方 → 拉伸强度预测")
-st.caption("本地运行的研究原型｜当前只预测拉伸强度，不预测冲击强度、弯曲性能等其他指标")
+def find_same_material_outside_scope(input_components,allmeas,training_ids):
+    wanted={c.get('substance_id') for c in input_components if c.get('substance_id') and c.get('substance_id')!='SUB_PP'}
+    if not wanted:return []
+    tensile=allmeas[allmeas.property.astype(str).isin(['tensile_strength','tensile_strength_reported'])]
+    out=[]
+    for _,r in tensile.iterrows():
+        if str(r.get('measurement_id')) in training_ids:continue
+        try:comps=json.loads(r.get('components_json') or '[]')
+        except Exception:comps=[]
+        ids={c.get('substance_id') for c in comps}
+        overlap=wanted&ids
+        if not overlap:continue
+        input_amount={}
+        ref_amount={}
+        for c in input_components:
+            sid=str(c.get('substance_id') or '')
+            if sid and sid!='SUB_PP':input_amount[sid]=input_amount.get(sid,0)+float(c.get('wt_pct') or 0)
+        for c in comps:
+            sid=str(c.get('substance_id') or '')
+            if sid and sid!='SUB_PP':ref_amount[sid]=ref_amount.get(sid,0)+float(c.get('wt_pct') or 0)
+        comp_distance=min(1.0,sum(abs(input_amount.get(k,0)-ref_amount.get(k,0)) for k in set(input_amount)|set(ref_amount))/200.0)
+        item=r.to_dict();item['_components']=comps;item['_overlap']=[c.get('substance_name') or c.get('substance_id') for c in input_components if c.get('substance_id') in overlap];item['_distance']=comp_distance
+        sid=str(item.get('source_id') or '');title=str(item.get('paper_title') or '').lower()
+        if sid=='SRC_P119' or ('silica' in title and 'film' in title) or ('硅' in title and '薄膜' in title):item['_scope_note']='薄膜/片材；形态与当前模型组不同'
+        elif sid=='SRC_P169' or 'nonwoven' in title or '无纺布' in title:item['_scope_note']='无纺布/纤维复合；形态与当前模型组不同'
+        else:item['_scope_note']='未进入当前模型训练组；请核对试样形态和测试条件'
+        out.append(item)
+    out.sort(key=lambda z:(-len(z['_overlap']),z['_distance']))
+    unique=[];seen=set()
+    for item in out:
+        source=str(item.get('source_id') or '')
+        if source in seen:continue
+        unique.append(item);seen.add(source)
+        if len(unique)==3:break
+    return unique
 
-st.warning(
-    "这是27条记录、6篇文献训练出的试验模型。留一文献验证中，Ridge 的 MAE 为 5.53 MPa，"
-    "高于简单平均值基线的 4.68 MPa，且 R² 为负。界面显示的数值目前不能作为配方设计、"
-    "采购或生产决策依据，也不代表单个预测的误差范围。"
-)
+def show_outside_evidence(r,n):
+    title=str(r.get('paper_title') or '题名未收录'); doi=str(r.get('doi') or '').strip()
+    with st.expander(f"{n}. {title}｜{r.get('source_sample') or '样品未标明'}｜{r.get('_scope_note')}"):
+        if doi:st.markdown(f"**DOI：** [{doi}](https://doi.org/{doi})")
+        st.write(f"**同一物质：** {'、'.join(r['_overlap'])}；**文献/测量：** {r.get('source_id')} / {r.get('measurement_id')}")
+        st.write(f"**文献实测：** {r.get('value')} {r.get('unit')}；**配方：** {format_formula(r['_components'])}")
+        st.write(f"**测试标准：** {r.get('standard') or '未报告'}；**条件：** {r.get('conditions_json') or '未报告'}")
+        st.write(f"**试样信息：** {r.get('specimen_json') or '未报告'}")
+        if r.get('source_locator'):st.write(f"**文献文件：** {r.get('source_locator')}")
+        if r.get('evidence_locator'):st.write(f"**原文数值定位：** {r.get('evidence_locator')}")
+        st.caption('此文献只作为同物质的外部参考，没有用于本次模型拟合或上方相近记录排序。')
 
-if not MODEL_PATH.exists():
-    st.error("没有找到已训练模型文件。请先在本文件夹运行 scripts/train_baseline.py。")
-    st.stop()
-if not FEATURES_PATH.exists() or not TRAINING_DATA_PATH.exists():
-    st.error("没有找到 data 文件夹中的特征清单或训练数据。请确认 app.py 放在试跑项目根目录。")
-    st.stop()
+st.title('聚丙烯改性配方预测与文献依据')
+st.caption('分类先行的研究原型｜当前仅对限定分组试算拉伸强度；其他性能支持检索')
+manifest_path=OUT/'taxonomy_model_manifest.json'
+needed=[OUT/'experimental_taxonomy_rf.joblib',manifest_path,OUT/'taxonomy_model_metrics.json',DATA/'model_reference_records.csv',DATA/'literature_measurements.csv',DATA/'substance_catalog.json',DATA/'property_inventory.csv',DATA/'classification_taxonomy_v1.json']
+if not all(p.exists() for p in needed):st.error('网站文件不完整；请确认完整解压 ZIP。');st.stop()
+manifest,metrics,refs,catalog,allmeas,inventory,tax=load_data();estimator=load_model();idx=alias_index(catalog);v=manifest['validation_metrics']
+st.warning(f"模型综合使用整个训练集的 {manifest['n_rows']} 条记录、{manifest['n_papers']} 篇文献。留一文献验证 MAE {v['model_MAE']:.2f} MPa，R² {v['model_R2']:.3f}。这些是整体验证统计，不是某篇单独文献的归因，也不是本次预测的误差区间。")
 
-try:
-    manifest, training, metrics = load_inputs()
-    model = load_model()
-except Exception as exc:
-    st.error(f"读取模型或训练文件失败：{exc}")
-    st.info("请使用同一个虚拟环境重新运行训练脚本，再启动本程序。")
-    st.stop()
-
-numeric_features = manifest["numeric_features"]
-categorical_features = manifest["categorical_features"]
-component_map = manifest["component_feature_map"]
-component_columns = [item["feature_column"] for item in component_map]
-process_numeric_features = [c for c in numeric_features if c not in component_columns]
-
-with st.sidebar:
-    st.subheader("当前模型范围")
-    st.write("目标属性：拉伸强度（MPa）")
-    st.write("训练范围：27条注塑体相 PP 拉伸记录，来自6篇文献")
-    st.write("材料选项：仅限本原型下拉框列出的组分")
-    if metrics:
-        ridge = metrics.get("ridge", {})
-        baseline = metrics.get("mean_baseline", {})
-        st.metric("留一文献 MAE", f"{ridge.get('MAE_MPa', float('nan')):.2f} MPa")
-        st.metric("简单基线 MAE", f"{baseline.get('MAE_MPa', float('nan')):.2f} MPa")
-        st.caption("MAE 是整体交叉验证误差，不是本次输入的置信区间。")
-
-st.markdown(
-    "先按**质量百分数（wt%）**填写配方。PP 基体和所有添加剂的质量百分数合计必须为 **100%**。"
-    "再填写尽可能完整的加工、成型和测试条件。"
-)
-
-with st.form("recipe_form"):
-    st.header("1. 配方组成")
-    st.caption(
-        "当前原型只认识本试跑数据中已有的23种组分。若你的物质不在列表中，先不要用相似名称替代；"
-        "需要先把该物质的规范名称映射并加入训练数据。"
-    )
-
-    percentage_inputs = {}
-    groups = ["PP基体", "填料与增强材料", "助剂与其他组分"]
-    for group_name in groups:
-        with st.expander(group_name, expanded=(group_name == "PP基体")):
-            group_items = [
-                item for item in component_map
-                if component_group(item.get("role", "")) == group_name
-            ]
-            cols = st.columns(2)
-            for idx, item in enumerate(group_items):
-                colname = item["feature_column"]
-                raw_name = item["component_name"]
-                display_name = COMPONENT_LABELS.get(raw_name, raw_name)
-                with cols[idx % 2]:
-                    percentage_inputs[colname] = st.number_input(
-                        display_name,
-                        min_value=0.0,
-                        max_value=100.0,
-                        value=0.0,
-                        step=0.1,
-                        key=f"pct_{colname}",
-                    )
-
-    total_pct = float(sum(percentage_inputs.values()))
-    matrix_pct = sum(
-        percentage_inputs[item["feature_column"]]
-        for item in component_map if item.get("role") == "matrix"
-    )
-    st.write(f"当前配方合计：**{total_pct:.1f} wt%**；PP基体：**{matrix_pct:.1f} wt%**")
-
-    st.header("2. 加工与成型条件")
-    st.caption("未报告或暂时不知道的项目可以留空；模型会用训练数据中的中位数补齐，并提示缺失情况。")
-    cat_input = {}
-    cat_col1, cat_col2 = st.columns(2)
-    for idx, field in enumerate(("compounding_route", "processing_route", "processing_variant")):
-        values = sorted(training[field].dropna().astype(str).unique().tolist())
-        if "not_reported" not in values:
-            values.insert(0, "not_reported")
-        with (cat_col1 if idx % 2 == 0 else cat_col2):
-            cat_input[field] = st.selectbox(
-                CATEGORY_LABELS[field],
-                options=values,
-                index=values.index("not_reported") if "not_reported" in values else 0,
-                format_func=category_display,
-                key=f"cat_{field}",
-            )
-
-    process_groups = {
-        "挤出/共混条件": [
-            "extrusion_temp_min_C", "extrusion_temp_max_C",
-            "extruder_screw_speed_rpm", "mixing_temp_min_C", "mixing_temp_max_C",
-            "mixer_speed_rpm", "mixing_time_min",
-        ],
-        "注塑条件": [
-            "injection_temp_min_C", "injection_temp_max_C", "mold_temp_C",
-            "injection_pressure_bar", "holding_time_s",
-        ],
-        "退火与试样调节条件": [
-            "post_anneal_temp_C", "post_anneal_time_h",
-            "conditioning_temp_C", "conditioning_rh_pct", "conditioning_time_h",
-        ],
-    }
-    numeric_raw = {}
-    for group_name, fields in process_groups.items():
-        with st.expander(group_name, expanded=False):
-            cols = st.columns(2)
-            for idx, field in enumerate(fields):
-                with cols[idx % 2]:
-                    numeric_raw[field] = st.text_input(
-                        NUMERIC_LABELS[field],
-                        value="",
-                        placeholder="可留空；例如 200",
-                        key=f"num_{field}",
-                    )
-
-    st.header("3. 拉伸测试条件")
-    test_cat1, test_cat2 = st.columns(2)
-    for idx, field in enumerate(("test_standard", "test_temperature_status")):
-        values = sorted(training[field].dropna().astype(str).unique().tolist())
-        if "not_reported" not in values:
-            values.insert(0, "not_reported")
-        with (test_cat1 if idx == 0 else test_cat2):
-            cat_input[field] = st.selectbox(
-                CATEGORY_LABELS[field],
-                options=values,
-                index=values.index("not_reported") if "not_reported" in values else 0,
-                format_func=category_display,
-                key=f"cat_{field}",
-            )
-
-    test_speed_col, _ = st.columns(2)
-    with test_speed_col:
-        numeric_raw["test_speed_mm_min"] = st.text_input(
-            NUMERIC_LABELS["test_speed_mm_min"],
-            value="",
-            placeholder="可留空；例如 10",
-            key="num_test_speed_mm_min",
-        )
-
-    submitted = st.form_submit_button("计算试验性预测", type="primary", use_container_width=True)
-
-if submitted:
-    errors = []
-    if abs(total_pct - 100.0) > 0.05:
-        errors.append(f"所有组分合计为 {total_pct:.1f} wt%，需要合计为100 wt%。")
-    if matrix_pct <= 0:
-        errors.append("PP基体比例必须大于0 wt%。")
-
-    numeric_values = {}
-    for field, raw in numeric_raw.items():
-        value, error = parse_optional_number(raw, NUMERIC_LABELS[field])
-        numeric_values[field] = value
-        if error:
-            errors.append(error)
-
-    if errors:
-        for error in errors:
-            st.error(error)
-        st.stop()
-
-    row = {field: np.nan for field in numeric_features}
-    for item in component_map:
-        row[item["feature_column"]] = float(percentage_inputs[item["feature_column"]])
-    row.update(numeric_values)
-    row.update({field: "not_reported" for field in categorical_features})
-    for field, value in cat_input.items():
-        # If the training set never contained an unreported value for this
-        # category, pass a true missing value so the saved imputer uses the
-        # training mode instead of creating an unseen category.
-        if value == "not_reported" and not (training[field].astype(str) == "not_reported").any():
-            row[field] = np.nan
+tab1,tab2,tab3=st.tabs(['配方预测与文献依据','数据库检索','分类与验证范围'])
+with tab1:
+    a,b,c=st.columns(3)
+    target=a.selectbox('预测性能',['拉伸强度（MPa）—实验性试算','冲击/弯曲/伸长率—暂仅检索','热学/电学/表面性能—暂仅检索'])
+    form=b.selectbox('试样/产品形态',['文献未报告/未确认（当前试算分组）','注塑/模压块材','薄膜/片材','纤维/无纺布','多孔膜/泡沫','电缆/涂层/其他专用形态'])
+    matrix=c.selectbox('PP 基体类型',['均聚 PP 或原文未明确（当前试算分组）','共聚/抗冲 PP','再生 PP','接枝/交联等特殊 PP'])
+    if target!='拉伸强度（MPa）—实验性试算':st.info('该性能目前没有通过验证门槛的模型，可到“数据库检索”查看已收录测量。')
+    if form!='文献未报告/未确认（当前试算分组）':st.info('该试样形态目前数据不足或未优于基线，暂不输出预测值。')
+    if matrix!='均聚 PP 或原文未明确（当前试算分组）':st.info('该 PP 基体类型暂不在已验证模型范围内。')
+    mech=next(x for x in tax['axes'] if x['id']=='mechanism')
+    st.multiselect('改性机制（可多选，便于分类记录）',mech['categories'])
+    st.subheader('配方组成')
+    st.caption('按总配方质量百分数填写，PP 和改性组分合计必须为 100 wt%。物质名称支持数据库别名，如 SiO2 / 二氧化硅。')
+    fn_label={v:k for k,v in tax['function_categories'].items()}
+    options=list(fn_label)
+    with st.form('formulation'):
+        rows=[]
+        for i in range(8):
+            cols=st.columns([3,1,2])
+            name=cols[0].text_input(f'物质 {i+1}',value='聚丙烯' if i==0 else '',key=f'name{i}',placeholder='例如 聚丙烯、SiO2、滑石粉')
+            pct=cols[1].number_input(f'wt% {i+1}',min_value=0.0,max_value=100.0,value=95.0 if i==0 else 0.0,step=.1,key=f'pct{i}')
+            role=cols[2].selectbox(f'组分功能 {i+1}',options,index=0 if i==0 else min(1,len(options)-1),key=f'role{i}')
+            rows.append((name,pct,fn_label[role]))
+        submitted=st.form_submit_button('检查配方并预测',type='primary')
+    st.subheader('加工与测试条件')
+    standards=sorted(refs.test_standard.astype(str).replace('',np.nan).dropna().unique().tolist())
+    routes=sorted(refs.processing_route.astype(str).replace('',np.nan).dropna().unique().tolist())
+    x,y,z=st.columns(3)
+    standard=x.selectbox('测试标准',standards,index=standards.index('not_reported') if 'not_reported' in standards else 0)
+    route=y.selectbox('加工/成型路线',routes,index=routes.index('not_reported_or_unclassified') if 'not_reported_or_unclassified' in routes else 0)
+    speed=x.text_input('拉伸速度（mm/min）'); test_temp=y.text_input('测试温度（°C）'); humidity=z.text_input('相对湿度（%）')
+    process_temp=z.text_input('加工温度（°C）'); screw=y.text_input('螺杆转速（rpm）'); duration=x.text_input('加工时间（min）')
+    if submitted:
+        errors=[];total=sum(float(p) for n,p,r in rows if n.strip())
+        if abs(total-100)>.11:errors.append(f'配方合计 {total:.1f} wt%，需要为 100 wt%。')
+        if target!='拉伸强度（MPa）—实验性试算':errors.append('该性能暂无可试算模型。')
+        if form!='文献未报告/未确认（当前试算分组）':errors.append('该形态暂无合格预测模型。')
+        if matrix!='均聚 PP 或原文未明确（当前试算分组）':errors.append('该 PP 基体类型暂无合格预测模型。')
+        components=[];fam={};func={};matrix_pct=0.0
+        for name,pct,role in rows:
+            if pct<=0 and not name.strip():continue
+            if pct<=0:continue
+            item,kind=match_substance(name,idx)
+            if kind!='exact':
+                if kind=='suggestions':errors.append(f"“{name}”未精确匹配。候选："+'；'.join(f"{q['name']}（{q.get('formula') or q['id']}）" for q in item[:3])+"。请用完整规范名称或别名重填。")
+                else:errors.append(f'数据库中未找到“{name}”。')
+                continue
+            family=str(item.get('family') or 'unknown');fc='family_wt__'+family
+            if fc not in manifest['numeric_features']:errors.append(f"{item['name']} 的物质家族 {family} 不在当前模型训练范围内。")
+            else:fam[fc]=fam.get(fc,0)+float(pct)
+            fn='function_wt__'+role
+            if fn in manifest['numeric_features']:func[fn]=func.get(fn,0)+float(pct)
+            if role=='matrix':matrix_pct+=float(pct)
+            components.append({'substance_id':item['id'],'substance_name':item['name'],'substance_family':family,'wt_pct':float(pct),'role':role,'formula':item.get('formula')})
+        if matrix_pct<=0:errors.append('至少需要一个 PP 基体组分，并选择“PP基体”功能。')
+        try:nums={'test_speed_mm_min':parse_optional(speed),'test_temperature_C':parse_optional(test_temp),'relative_humidity_percent':parse_optional(humidity),'process_temperature_min_C':parse_optional(process_temp),'process_temperature_max_C':parse_optional(process_temp),'process_screw_speed_rpm':parse_optional(screw),'process_duration_min_max':parse_optional(duration)}
+        except ValueError:nums={};errors.append('条件字段必须是有效数字，未知时请留空。')
+        if errors:
+            for err in errors:st.error(err)
         else:
-            row[field] = value
+            vals={c:(0.0 if c.startswith(('family_wt__','function_wt__')) else np.nan) for c in manifest['numeric_features']};vals.update(fam);vals.update(func)
+            for k,val in nums.items():
+                if k in vals:vals[k]=val
+            cats={'test_standard':standard,'test_temperature_status':'numeric_reported' if np.isfinite(nums['test_temperature_C']) else 'not_reported','test_state':'not_reported','processing_route':route,'specimen_form':'not_reported','specimen_form_class':'unknown_or_not_reported','pp_matrix_class':'pp_homopolymer_or_unspecified'}
+            row={**vals,**cats};X=pd.DataFrame([row])[manifest['numeric_features']+manifest['categorical_features']]
+            prediction=float(estimator.predict(X)[0]);st.success(f'实验性拉伸强度估计：**{prediction:.2f} MPa**')
+            st.info(f"本模型在 {manifest['n_rows']} 条、{manifest['n_papers']} 篇文献的训练范围内，留一文献验证 MAE 为 {v['model_MAE']:.2f} MPa。该误差不是单次预测区间。")
+            st.markdown('### 本次输入最接近的文献实测依据')
+            st.caption('模型由整个训练集综合学习，以下列出的是同一适用分组中配方及条件最接近的实测记录，不表示预测由其中某一篇文献单独决定。每条记录可展开查看 DOI、配方、实测值、测试条件与原文定位。')
+            conditions={**nums,'test_standard':standard,'processing_route':route}
+            for i,ref in enumerate(rank_literature(components,conditions,refs,manifest['role_map']),1):show_evidence(ref,i)
+            training_ids=set(refs.measurement_id.astype(str))
+            outside=find_same_material_outside_scope(components,allmeas,training_ids)
+            if outside:
+                st.markdown('#### 同一添加物的其他文献（未参与当前模型训练）')
+                st.caption('这些记录可能属于薄膜、无纺布等不同试样形态，或未达到本模型训练条件。它们不能解释上方预测值，但可以帮助你判断模型缺少了哪些同类训练文献。')
+                for i,ref in enumerate(outside,1):show_outside_evidence(ref,i)
 
-    input_frame = pd.DataFrame([row], columns=numeric_features + categorical_features)
+with tab2:
+    st.subheader('数据库性能数据检索')
+    st.caption(f"当前整理检索表：{len(allmeas):,} 条性能测量记录。")
+    a,b,c=st.columns([2,1.5,1.5]);query=a.text_input('物质名 / 化学式 / 别名',placeholder='SiO2、二氧化硅');props=sorted(allmeas.property.astype(str).unique());prop=b.selectbox('性能指标',['全部指标']+props);review=c.selectbox('数据库 reviewed 状态',['全部','reviewed=true','reviewed=false'])
+    result=allmeas.copy()
+    if prop!='全部指标':result=result[result.property.astype(str)==prop]
+    if review!='全部':
+        flags=result.reviewed.astype(str).str.lower().isin(['1','true']);result=result[flags if review.endswith('true') else ~flags]
+    if query.strip():
+        item,kind=match_substance(query,idx)
+        if kind=='exact':result=result[result.components_search.astype(str).str.contains(re.escape(item['id']),case=False,regex=True)];st.caption(f"规范物质：{item['name']}（{item.get('formula') or item['id']}）")
+        elif kind=='suggestions':st.info('没有精确命中，建议候选：'+'；'.join(f"{q['name']}（{q.get('formula') or q['id']}）" for q in item[:4]));result=result.iloc[:0]
+        else:st.info('未找到该物质，请换用化学式或规范名。');result=result.iloc[:0]
+    st.write(f'检索命中 {len(result):,} 条')
+    if len(result):
+        view=result.head(300).copy();view['配方']=view.components_json.map(lambda s:format_formula(json.loads(s)) if isinstance(s,str) and s.startswith('[') else '')
+        show=[x for x in ['property','value','unit','paper_title','doi','source_sample','配方','standard','conditions_json','evidence_locator','source_locator','reviewed'] if x in view]
+        st.dataframe(view[show],width='stretch',hide_index=True)
+        if len(result)>300:st.caption('最多显示前300条；请增加筛选条件。')
 
-    warnings = []
-    if any(pd.isna(value) for value in numeric_values.values()):
-        missing_count = sum(pd.isna(value) for value in numeric_values.values())
-        warnings.append(
-            f"有 {missing_count} 项加工/测试数值条件留空，模型会用训练数据中位数补齐。"
-        )
-
-    for item in component_map:
-        colname = item["feature_column"]
-        value = float(percentage_inputs[colname])
-        if value <= 0:
-            continue
-        observed = pd.to_numeric(training[colname], errors="coerce").dropna()
-        positive = observed[observed > 0]
-        if len(positive) < 3:
-            warnings.append(
-                f"{COMPONENT_LABELS.get(item['component_name'], item['component_name'])} "
-                f"在训练集中仅有 {len(positive)} 条非零记录，相关预测特别不稳定。"
-            )
-        if len(positive) and (value < positive.min() or value > positive.max()):
-            warnings.append(
-                f"{COMPONENT_LABELS.get(item['component_name'], item['component_name'])} "
-                f"的输入比例 {value:g}% 超出训练数据的非零范围 "
-                f"{positive.min():g}%–{positive.max():g}%。"
-            )
-
-    for field, value in numeric_values.items():
-        if pd.isna(value):
-            continue
-        observed = pd.to_numeric(training[field], errors="coerce").dropna()
-        if len(observed) and (value < observed.min() or value > observed.max()):
-            warnings.append(
-                f"{NUMERIC_LABELS[field]}={value:g} 超出训练数据范围 "
-                f"{observed.min():g}–{observed.max():g}。"
-            )
-
-    try:
-        prediction = float(model.predict(input_frame)[0])
-    except Exception as exc:
-        st.error(f"模型计算失败：{exc}")
-        st.stop()
-
-    st.divider()
-    st.header("预测结果")
-    st.metric("试验性预测拉伸强度", f"{prediction:.2f} MPa")
-    st.caption(
-        "这是当前小样本模型给出的单个数值；系统没有经过校准的单次预测置信区间。"
-        "留一文献 MAE 只能描述整体验证误差，不能直接当成本次预测的误差范围。"
-    )
-
-    recipe_rows = [
-        {
-            "组分": COMPONENT_LABELS.get(item["component_name"], item["component_name"]),
-            "质量百分数（wt%）": float(percentage_inputs[item["feature_column"]]),
-        }
-        for item in component_map
-        if float(percentage_inputs[item["feature_column"]]) > 0
-    ]
-    st.subheader("本次输入的配方")
-    st.dataframe(pd.DataFrame(recipe_rows), hide_index=True, use_container_width=True)
-
-    if warnings:
-        st.warning("本次输入的适用性提示：\n\n" + "\n\n".join(f"- {message}" for message in warnings))
-    else:
-        st.info(
-            "输入值没有触发简单的范围检查，但这不代表模型已经可靠；"
-            "当前模型在总体验证中仍未优于简单平均值基线。"
-        )
-
-    export_rows = [
-        {"类别": "配方", "项目": r["组分"], "输入值": r["质量百分数（wt%）"]}
-        for r in recipe_rows
-    ]
-    for field, value in numeric_values.items():
-        export_rows.append({"类别": "加工/测试数值条件", "项目": NUMERIC_LABELS[field], "输入值": value})
-    for field, value in cat_input.items():
-        export_rows.append({"类别": "加工/测试分类条件", "项目": CATEGORY_LABELS[field], "输入值": category_display(value)})
-    export_rows.append({"类别": "预测结果", "项目": "拉伸强度（MPa）", "输入值": prediction})
-    st.download_button(
-        "下载本次输入与预测结果 CSV",
-        data=pd.DataFrame(export_rows).to_csv(index=False, encoding="utf-8-sig"),
-        file_name="pp_tensile_prediction_experimental.csv",
-        mime="text/csv",
-    )
+with tab3:
+    st.subheader('分类结构与模型验证')
+    st.dataframe(pd.DataFrame([{'维度':a['label'],'类别':'、'.join(a['categories'])} for a in tax['axes']]),width='stretch',hide_index=True)
+    st.markdown('#### 留一文献验证结果')
+    result=pd.DataFrame(metrics['results'])
+    st.dataframe(result[['scope','model','n_rows','n_papers','baseline_MAE','model_MAE','model_RMSE','model_R2','folds_model_beats_baseline_MAE','folds_total']],width='stretch',hide_index=True)
+    st.markdown('#### 数据库已有性能记录');st.dataframe(inventory,width='stretch',hide_index=True)
+    st.caption('性能记录数不等于可训练模型数；没有经过分组验证的性能类别仅供检索，暂不预测。')

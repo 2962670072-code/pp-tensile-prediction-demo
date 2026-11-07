@@ -1,0 +1,3530 @@
+[
+  {
+    "id": "SUB_PP",
+    "name": "聚丙烯",
+    "family": "polyolefin",
+    "formula": null,
+    "aliases": [
+      "PP",
+      "polypropylene",
+      "聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_SILICA",
+    "name": "二氧化硅",
+    "family": "inorganic_filler",
+    "formula": "SiO2",
+    "aliases": [
+      "SiO2",
+      "SiO₂",
+      "silica",
+      "silicon dioxide",
+      "二氧化硅",
+      "纳米二氧化硅"
+    ]
+  },
+  {
+    "id": "SUB_PP_G_MAH",
+    "name": "马来酸酐接枝聚丙烯",
+    "family": "grafted_polyolefin",
+    "formula": null,
+    "aliases": [
+      "PP-g-MA",
+      "PP-g-MAH",
+      "maleic anhydride grafted polypropylene",
+      "马来酸酐接枝聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_ADMER",
+    "name": "ADMER黏合性聚烯烃",
+    "family": "adhesive_polyolefin",
+    "formula": null,
+    "aliases": [
+      "ADMER",
+      "ADMER黏合性聚烯烃",
+      "AMDER"
+    ]
+  },
+  {
+    "id": "SUB_PVA",
+    "name": "聚乙烯醇",
+    "family": "polyvinyl_alcohol",
+    "formula": null,
+    "aliases": [
+      "PVA",
+      "polyvinyl alcohol",
+      "聚乙烯醇"
+    ]
+  },
+  {
+    "id": "SUB_GLYCEROL",
+    "name": "甘油",
+    "family": "plasticizer",
+    "formula": null,
+    "aliases": [
+      "glycerin",
+      "glycerol",
+      "甘油"
+    ]
+  },
+  {
+    "id": "SUB_TALC",
+    "name": "滑石粉",
+    "family": "inorganic_filler",
+    "formula": null,
+    "aliases": [
+      "Talc",
+      "talc",
+      "滑石粉"
+    ]
+  },
+  {
+    "id": "SUB_POE",
+    "name": "聚烯烃弹性体",
+    "family": "polyolefin_elastomer",
+    "formula": null,
+    "aliases": [
+      "POE",
+      "聚烯烃弹性体"
+    ]
+  },
+  {
+    "id": "SUB_NA166L",
+    "name": "NA-166L成核剂",
+    "family": "beta_nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "NA-166L",
+      "NA-166L成核剂"
+    ]
+  },
+  {
+    "id": "SUB_P002_AOX",
+    "name": "未明确组成抗氧剂（陈磐文献）",
+    "family": "stabilizer",
+    "formula": null,
+    "aliases": [
+      "未明确组成抗氧剂（陈磐文献）"
+    ]
+  },
+  {
+    "id": "SUB_P002_AGE",
+    "name": "未明确组成抗老化剂（陈磐文献）",
+    "family": "stabilizer",
+    "formula": null,
+    "aliases": [
+      "未明确组成抗老化剂（陈磐文献）"
+    ]
+  },
+  {
+    "id": "SUB_P002_COLOR",
+    "name": "未明确组成色母粒（陈磐文献）",
+    "family": "color_masterbatch",
+    "formula": null,
+    "aliases": [
+      "未明确组成色母粒（陈磐文献）"
+    ]
+  },
+  {
+    "id": "SUB_DPTH",
+    "name": "N,N′-二苯基对苯二甲酰胺",
+    "family": "beta_nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "DPTH",
+      "N,N'-diphenylterephthalamide",
+      "N,N′-二苯基对苯二甲酰胺"
+    ]
+  },
+  {
+    "id": "SUB_TMB5",
+    "name": "二环己基对苯二甲酰胺（文献TMB-5）",
+    "family": "beta_nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "TMB-5",
+      "二环己基对苯二甲酰胺（文献TMB-5）"
+    ]
+  },
+  {
+    "id": "SUB_CACO3",
+    "name": "碳酸钙",
+    "family": "mineral_filler",
+    "formula": "CaCO3",
+    "aliases": [
+      "CaCO3",
+      "CaCO₃",
+      "calcium carbonate",
+      "碳酸钙",
+      "重质碳酸钙"
+    ]
+  },
+  {
+    "id": "SUB_GF",
+    "name": "玻璃纤维",
+    "family": "glass_fiber",
+    "formula": null,
+    "aliases": [
+      "GF",
+      "glass fiber",
+      "玻璃纤维",
+      "玻纤"
+    ]
+  },
+  {
+    "id": "SUB_ALUMINATE",
+    "name": "铝酸酯偶联剂",
+    "family": "coupling_agent",
+    "formula": null,
+    "aliases": [
+      "aluminate coupling agent",
+      "铝酸酯偶联剂"
+    ]
+  },
+  {
+    "id": "SUB_AO1010",
+    "name": "抗氧剂1010",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "AO1010",
+      "antioxidant 1010",
+      "抗氧剂1010",
+      "抗氧化剂1010"
+    ]
+  },
+  {
+    "id": "SUB_PF_PARYLENE",
+    "name": "聚对二甲苯F型（Parylene F）",
+    "family": "polymer_coating",
+    "formula": "C16H8F8",
+    "aliases": [
+      "PF",
+      "Parylene F",
+      "parylene F",
+      "聚对二甲苯F型（Parylene F）"
+    ]
+  },
+  {
+    "id": "SUB_CARBON_FIBER",
+    "name": "碳纤维",
+    "family": "reinforcement",
+    "formula": null,
+    "aliases": [
+      "CF",
+      "carbon fiber",
+      "碳纤维"
+    ]
+  },
+  {
+    "id": "SUB_STYRENE",
+    "name": "苯乙烯",
+    "family": "monomer",
+    "formula": "C8H8",
+    "aliases": [
+      "St",
+      "styrene",
+      "乙烯基苯",
+      "苯乙烯"
+    ]
+  },
+  {
+    "id": "SUB_BENZOYL_PEROXIDE",
+    "name": "过氧化苯甲酰",
+    "family": "initiator",
+    "formula": "C14H10O4",
+    "aliases": [
+      "BPO",
+      "benzoyl peroxide",
+      "过氧化苯甲酰"
+    ]
+  },
+  {
+    "id": "SUB_TBPPI",
+    "name": "过氧化叔丁基异丙基碳酸酯",
+    "family": "initiator",
+    "formula": null,
+    "aliases": [
+      "TBPPI",
+      "tert-butyl peroxyisopropyl carbonate",
+      "过氧化叔丁基异丙基碳酸酯"
+    ]
+  },
+  {
+    "id": "SUB_HYDROGEN_PEROXIDE",
+    "name": "过氧化氢",
+    "family": "chemical_reagent",
+    "formula": "H2O2",
+    "aliases": [
+      "H2O2",
+      "hydrogen peroxide",
+      "过氧化氢"
+    ]
+  },
+  {
+    "id": "SUB_AO50",
+    "name": "抗氧剂AO-50",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "AO-50",
+      "octadecyl-3-(3,5-di-tert-butyl-4-hydroxyphenyl)propionate",
+      "抗氧剂AO-50"
+    ]
+  },
+  {
+    "id": "SUB_TRICHLOROHEXYLSILANE",
+    "name": "三氯己基硅烷",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "trichlorohexylsilane",
+      "三氯己基硅烷"
+    ]
+  },
+  {
+    "id": "SUB_TRICHLORODODECYLSILANE",
+    "name": "三氯十二烷基硅烷",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "trichlorododecylsilane",
+      "三氯十二烷基硅烷"
+    ]
+  },
+  {
+    "id": "SUB_TRICHLOROHEXADECYLSILANE",
+    "name": "三氯十六烷基硅烷",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "trichlorohexadecylsilane",
+      "三氯十六烷基硅烷"
+    ]
+  },
+  {
+    "id": "SUB_WPCBP",
+    "name": "废印刷电路板非金属粉体",
+    "family": "composite_filler",
+    "formula": null,
+    "aliases": [
+      "WPCBP",
+      "waste printed circuit board powder",
+      "废PCB粉",
+      "废印刷电路板非金属粉体"
+    ]
+  },
+  {
+    "id": "SUB_KH550",
+    "name": "γ-氨丙基三乙氧基硅烷",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "APTES",
+      "KH550",
+      "γ-aminopropyltriethoxysilane",
+      "γ-氨丙基三乙氧基硅烷"
+    ]
+  },
+  {
+    "id": "SUB_KH560",
+    "name": "γ-缩水甘油醚氧丙基三甲氧基硅烷",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "GPTMS",
+      "KH560",
+      "γ-缩水甘油醚氧丙基三甲氧基硅烷"
+    ]
+  },
+  {
+    "id": "SUB_KH570",
+    "name": "甲基丙烯酰氧丙基三甲氧基硅烷",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "3-methacryloxypropyltrimethoxysilane",
+      "KH570",
+      "甲基丙烯酰氧丙基三甲氧基硅烷"
+    ]
+  },
+  {
+    "id": "SUB_DBTDL",
+    "name": "二月桂酸二丁基锡",
+    "family": "catalyst",
+    "formula": null,
+    "aliases": [
+      "DBTDL",
+      "dibutyltin dilaurate",
+      "二月桂酸二丁基锡"
+    ]
+  },
+  {
+    "id": "SUB_TEOS",
+    "name": "正硅酸乙酯",
+    "family": "precursor",
+    "formula": null,
+    "aliases": [
+      "TEOS",
+      "tetraethyl orthosilicate",
+      "正硅酸乙酯"
+    ]
+  },
+  {
+    "id": "SUB_TITANIUM_DIOXIDE",
+    "name": "二氧化钛",
+    "family": "oxide_filler",
+    "formula": "TiO2",
+    "aliases": [
+      "TiO2",
+      "TiO₂",
+      "titanium dioxide",
+      "二氧化钛"
+    ]
+  },
+  {
+    "id": "SUB_FLAME_RETARDANT_MIX",
+    "name": "溴-磷-氮复配阻燃剂（组成未披露）",
+    "family": "flame_retardant",
+    "formula": null,
+    "aliases": [
+      "FR blend",
+      "bromine-phosphorus-nitrogen flame retardant blend",
+      "溴-磷-氮复配阻燃剂（组成未披露）"
+    ]
+  },
+  {
+    "id": "SUB_EBS",
+    "name": "乙撑双硬脂酰胺",
+    "family": "lubricant",
+    "formula": null,
+    "aliases": [
+      "EBS",
+      "ethylene bis stearamide",
+      "乙撑双硬脂酰胺"
+    ]
+  },
+  {
+    "id": "SUB_AO_B215_UNSPEC",
+    "name": "抗氧剂B215（组成未充分确认）",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "B215",
+      "抗氧剂B215（组成未充分确认）"
+    ]
+  },
+  {
+    "id": "SUB_CALCIUM_STEARATE",
+    "name": "硬脂酸钙",
+    "family": "lubricant",
+    "formula": null,
+    "aliases": [
+      "calcium stearate",
+      "硬脂酸钙"
+    ]
+  },
+  {
+    "id": "SUB_BARIUM_SULFATE",
+    "name": "硫酸钡",
+    "family": "oxide_filler",
+    "formula": "BaSO4",
+    "aliases": [
+      "BaSO4",
+      "BaSO₄",
+      "barium sulfate",
+      "硫酸钡"
+    ]
+  },
+  {
+    "id": "SUB_LIGNIN",
+    "name": "木质素",
+    "family": "bio_based_additive",
+    "formula": null,
+    "aliases": [
+      "lignin",
+      "木质素",
+      "棉杆木质素"
+    ]
+  },
+  {
+    "id": "SUB_UREA",
+    "name": "尿素",
+    "family": "chemical_reagent",
+    "formula": "CH4N2O",
+    "aliases": [
+      "urea",
+      "尿素"
+    ]
+  },
+  {
+    "id": "SUB_BUTYRIC_ANHYDRIDE",
+    "name": "丁酸酐",
+    "family": "chemical_reagent",
+    "formula": "C8H14O3",
+    "aliases": [
+      "butyric anhydride",
+      "丁酸酐"
+    ]
+  },
+  {
+    "id": "SUB_MPHENYLENEDIAMINE",
+    "name": "间苯二胺",
+    "family": "chemical_reagent",
+    "formula": "C6H8N2",
+    "aliases": [
+      "1,3-phenylenediamine",
+      "m-phenylenediamine",
+      "间苯二胺"
+    ]
+  },
+  {
+    "id": "SUB_SORBITOL",
+    "name": "山梨醇",
+    "family": "polyol",
+    "formula": null,
+    "aliases": [
+      "D-glucitol",
+      "sorbitol",
+      "山梨醇"
+    ]
+  },
+  {
+    "id": "SUB_MALTITOL",
+    "name": "麦芽糖醇",
+    "family": "polyol",
+    "formula": null,
+    "aliases": [
+      "maltitol",
+      "麦芽糖醇"
+    ]
+  },
+  {
+    "id": "SUB_PEG",
+    "name": "聚乙二醇",
+    "family": "polyether",
+    "formula": null,
+    "aliases": [
+      "PEG",
+      "polyethylene glycol",
+      "聚乙二醇"
+    ]
+  },
+  {
+    "id": "SUB_EGDE",
+    "name": "乙二醇二缩水甘油醚",
+    "family": "crosslinker",
+    "formula": null,
+    "aliases": [
+      "EGDE",
+      "ethylene glycol diglycidyl ether",
+      "乙二醇二缩水甘油醚"
+    ]
+  },
+  {
+    "id": "SUB_TTMA",
+    "name": "三羟甲基丙烷三(2-甲基-1-氮丙啶丙酸酯)",
+    "family": "crosslinker",
+    "formula": null,
+    "aliases": [
+      "TTMA",
+      "三羟甲基丙烷三(2-甲基-1-氮丙啶丙酸酯)"
+    ]
+  },
+  {
+    "id": "SUB_DOPA",
+    "name": "3,4-二羟基-L-苯丙氨酸",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "3,4-dihydroxy-L-phenylalanine",
+      "3,4-二羟基-L-苯丙氨酸",
+      "DOPA"
+    ]
+  },
+  {
+    "id": "SUB_DOPAMINE",
+    "name": "多巴胺",
+    "family": "chemical_reagent",
+    "formula": "C8H11NO2",
+    "aliases": [
+      "DA",
+      "dopamine",
+      "多巴胺"
+    ]
+  },
+  {
+    "id": "SUB_LACCASE",
+    "name": "漆酶",
+    "family": "enzyme",
+    "formula": null,
+    "aliases": [
+      "laccase",
+      "漆酶"
+    ]
+  },
+  {
+    "id": "SUB_POLYDOPAMINE",
+    "name": "聚多巴胺",
+    "family": "polymer_coating",
+    "formula": null,
+    "aliases": [
+      "PDA",
+      "polydopamine",
+      "聚多巴胺"
+    ]
+  },
+  {
+    "id": "SUB_ACRYLIC_ACID",
+    "name": "丙烯酸",
+    "family": "monomer",
+    "formula": "C3H4O2",
+    "aliases": [
+      "AA",
+      "acrylic acid",
+      "丙烯酸"
+    ]
+  },
+  {
+    "id": "SUB_PB",
+    "name": "普鲁士蓝",
+    "family": "adsorbent",
+    "formula": null,
+    "aliases": [
+      "PB",
+      "Prussian blue",
+      "普鲁士蓝"
+    ]
+  },
+  {
+    "id": "SUB_POTASSIUM_FERROCYANIDE",
+    "name": "亚铁氰化钾",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "K4Fe(CN)6",
+      "potassium ferrocyanide",
+      "亚铁氰化钾"
+    ]
+  },
+  {
+    "id": "SUB_IRON_SULFATE",
+    "name": "硫酸亚铁",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "FeSO4",
+      "iron sulfate",
+      "硫酸亚铁"
+    ]
+  },
+  {
+    "id": "SUB_FERRIC_SULFATE",
+    "name": "硫酸铁(III)",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "Fe2(SO4)3",
+      "ferric sulfate",
+      "硫酸铁(III)"
+    ]
+  },
+  {
+    "id": "SUB_POTASSIUM_CHLORATE",
+    "name": "氯酸钾",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "KClO3",
+      "potassium chlorate",
+      "氯酸钾"
+    ]
+  },
+  {
+    "id": "SUB_SULFURIC_ACID",
+    "name": "硫酸",
+    "family": "chemical_reagent",
+    "formula": "H2SO4",
+    "aliases": [
+      "H2SO4",
+      "sulfuric acid",
+      "硫酸"
+    ]
+  },
+  {
+    "id": "SUB_POTASSIUM_PERSULFATE",
+    "name": "过硫酸钾",
+    "family": "initiator",
+    "formula": null,
+    "aliases": [
+      "KPS",
+      "potassium persulfate",
+      "过硫酸钾"
+    ]
+  },
+  {
+    "id": "SUB_PMS",
+    "name": "过一硫酸盐氧化剂",
+    "family": "oxidizer",
+    "formula": null,
+    "aliases": [
+      "PMS",
+      "peroxymonosulfate",
+      "过一硫酸盐氧化剂"
+    ]
+  },
+  {
+    "id": "SUB_COPPER_SULFATE",
+    "name": "硫酸铜",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "CuSO4",
+      "copper sulfate",
+      "硫酸铜"
+    ]
+  },
+  {
+    "id": "SUB_TANNIC_ACID",
+    "name": "单宁酸",
+    "family": "polyphenol",
+    "formula": null,
+    "aliases": [
+      "TA",
+      "tannic acid",
+      "单宁酸"
+    ]
+  },
+  {
+    "id": "SUB_TRIS",
+    "name": "三羟甲基氨基甲烷",
+    "family": "buffer_reagent",
+    "formula": null,
+    "aliases": [
+      "Tris",
+      "tris(hydroxymethyl)aminomethane",
+      "三羟甲基氨基甲烷"
+    ]
+  },
+  {
+    "id": "SUB_HMIM",
+    "name": "2-甲基咪唑",
+    "family": "ligand",
+    "formula": null,
+    "aliases": [
+      "2-methylimidazole",
+      "2-甲基咪唑",
+      "Hmim"
+    ]
+  },
+  {
+    "id": "SUB_ZIFL",
+    "name": "沸石咪唑骨架L",
+    "family": "metal_organic_framework",
+    "formula": null,
+    "aliases": [
+      "ZIF-L",
+      "沸石咪唑骨架L"
+    ]
+  },
+  {
+    "id": "SUB_ZINC_NITRATE",
+    "name": "硝酸锌六水合物",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "Zn(NO3)2·6H2O",
+      "zinc nitrate hexahydrate",
+      "硝酸锌六水合物"
+    ]
+  },
+  {
+    "id": "SUB_PVP",
+    "name": "聚乙烯吡咯烷酮",
+    "family": "polymer",
+    "formula": null,
+    "aliases": [
+      "PVP-K30",
+      "polyvinylpyrrolidone",
+      "聚乙烯吡咯烷酮"
+    ]
+  },
+  {
+    "id": "SUB_MIL53FE",
+    "name": "MIL-53(Fe)",
+    "family": "metal_organic_framework",
+    "formula": null,
+    "aliases": [
+      "MIL-53(Fe)"
+    ]
+  },
+  {
+    "id": "SUB_PVDF_HFP",
+    "name": "聚偏氟乙烯-六氟丙烯共聚物",
+    "family": "polymer",
+    "formula": null,
+    "aliases": [
+      "PVDF-HFP",
+      "poly(vinylidene fluoride-co-hexafluoropropylene)",
+      "聚偏氟乙烯-六氟丙烯共聚物"
+    ]
+  },
+  {
+    "id": "SUB_RHODAMINE_B",
+    "name": "罗丹明B",
+    "family": "dye",
+    "formula": null,
+    "aliases": [
+      "RhB",
+      "Rhodamine B",
+      "罗丹明B"
+    ]
+  },
+  {
+    "id": "SUB_PEEK",
+    "name": "聚醚醚酮",
+    "family": "engineering_polymer",
+    "formula": "C19H12O3",
+    "aliases": [
+      "PEEK",
+      "聚醚醚酮"
+    ]
+  },
+  {
+    "id": "SUB_CARBON_NANOTUBE",
+    "name": "碳纳米管",
+    "family": "nanofiller",
+    "formula": null,
+    "aliases": [
+      "CNT",
+      "carbon nanotube",
+      "碳纳米管"
+    ]
+  },
+  {
+    "id": "SUB_GASIFICATION_FLY_ASH",
+    "name": "煤气化飞灰",
+    "family": "composite_filler",
+    "formula": null,
+    "aliases": [
+      "gasification fly ash",
+      "气化飞灰",
+      "煤气化飞灰"
+    ]
+  },
+  {
+    "id": "SUB_ALUMINUM_EFFECT_PIGMENT",
+    "name": "铝粉效果颜料",
+    "family": "pigment",
+    "formula": null,
+    "aliases": [
+      "aluminum effect pigment",
+      "铝粉效果颜料"
+    ]
+  },
+  {
+    "id": "SUB_AO168",
+    "name": "抗氧剂168",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "AO168",
+      "antioxidant 168",
+      "抗氧剂168"
+    ]
+  },
+  {
+    "id": "SUB_13_BUTADIENE",
+    "name": "1,3-丁二烯",
+    "family": "crosslinking_coagent",
+    "formula": "C4H6",
+    "aliases": [
+      "1,3-butadiene",
+      "1,3-丁二烯",
+      "butadiene"
+    ]
+  },
+  {
+    "id": "SUB_DMAC",
+    "name": "N,N-二甲基乙酰胺",
+    "family": "solvent",
+    "formula": "C4H9NO",
+    "aliases": [
+      "DMAC",
+      "N,N-dimethylacetamide",
+      "N,N-二甲基乙酰胺"
+    ]
+  },
+  {
+    "id": "SUB_MONTMORILLONITE",
+    "name": "蒙脱土",
+    "family": "inorganic_filler",
+    "formula": null,
+    "aliases": [
+      "MMT",
+      "Na-MMT",
+      "montmorillonite",
+      "蒙脱土",
+      "蒙脱石"
+    ]
+  },
+  {
+    "id": "SUB_STEARIC_ACID",
+    "name": "硬脂酸",
+    "family": "organic_modifier",
+    "formula": "C18H36O2",
+    "aliases": [
+      "stearic acid",
+      "十八烷酸",
+      "硬脂酸"
+    ]
+  },
+  {
+    "id": "SUB_FERRIC_CHLORIDE_HEXAHYDRATE",
+    "name": "六水合氯化铁",
+    "family": "inorganic_reagent",
+    "formula": "FeCl3·6H2O",
+    "aliases": [
+      "FeCl3·6H2O",
+      "ferric chloride hexahydrate",
+      "六水合氯化铁"
+    ]
+  },
+  {
+    "id": "SUB_PA1",
+    "name": "聚酰胺1",
+    "family": "polymer_additive",
+    "formula": null,
+    "aliases": [
+      "PA1",
+      "polyamide 1",
+      "聚酰胺1"
+    ]
+  },
+  {
+    "id": "SUB_PARAFFIN",
+    "name": "液体石蜡",
+    "family": "processing_aid",
+    "formula": null,
+    "aliases": [
+      "liquid paraffin",
+      "液体石蜡"
+    ]
+  },
+  {
+    "id": "SUB_SODIUM_HYPOPHOSPHITE",
+    "name": "次磷酸钠",
+    "family": "catalyst",
+    "formula": null,
+    "aliases": [
+      "sodium hypophosphite",
+      "次磷酸钠"
+    ]
+  },
+  {
+    "id": "SUB_APP",
+    "name": "聚磷酸铵",
+    "family": "flame_retardant",
+    "formula": null,
+    "aliases": [
+      "APP",
+      "ammonium polyphosphate",
+      "聚磷酸铵"
+    ]
+  },
+  {
+    "id": "SUB_DAD",
+    "name": "1,10-癸二胺",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "1,10-diaminodecane",
+      "1,10-癸二胺",
+      "DAD"
+    ]
+  },
+  {
+    "id": "SUB_ATMP",
+    "name": "氨基三亚甲基膦酸",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "ATMP",
+      "aminotrimethylene phosphonic acid",
+      "氨基三亚甲基膦酸"
+    ]
+  },
+  {
+    "id": "SUB_BASALT_FIBER",
+    "name": "玄武岩纤维",
+    "family": "reinforcing_fiber",
+    "formula": null,
+    "aliases": [
+      "BF",
+      "basalt fiber",
+      "basalt fibre",
+      "玄武岩纤维"
+    ]
+  },
+  {
+    "id": "SUB_HALLOYSITE",
+    "name": "埃洛石",
+    "family": "inorganic_filler",
+    "formula": "Al2Si2O5(OH)4",
+    "aliases": [
+      "HNT",
+      "halloysite",
+      "halloysite nanotubes",
+      "埃洛石",
+      "埃洛石纳米管"
+    ]
+  },
+  {
+    "id": "SUB_MBP_PHOSPHATE",
+    "name": "2,2′-亚甲基双(4,6-二叔丁基苯基)磷酸酯",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "2,2-methylene-bis-(4,6-di-tert-butylphenyl) phosphate",
+      "2,2′-亚甲基双(4,6-二叔丁基苯基)磷酸酯",
+      "MBP"
+    ]
+  },
+  {
+    "id": "SUB_HDPE",
+    "name": "高密度聚乙烯",
+    "family": "polyolefin",
+    "formula": null,
+    "aliases": [
+      "HDPE",
+      "high density polyethylene",
+      "high-density polyethylene",
+      "高密度聚乙烯"
+    ]
+  },
+  {
+    "id": "SUB_PA6",
+    "name": "聚酰胺6",
+    "family": "polymer_blend",
+    "formula": null,
+    "aliases": [
+      "Ny6",
+      "Nylon 6",
+      "PA6",
+      "尼龙6",
+      "聚酰胺6"
+    ]
+  },
+  {
+    "id": "SUB_MAH",
+    "name": "马来酸酐",
+    "family": "grafting_monomer",
+    "formula": "C4H2O3",
+    "aliases": [
+      "MAH",
+      "maleic anhydride",
+      "马来酸酐"
+    ]
+  },
+  {
+    "id": "SUB_CAPROLACTAM",
+    "name": "ε-己内酰胺",
+    "family": "reaction_promoter",
+    "formula": null,
+    "aliases": [
+      "Cap",
+      "caprolactam",
+      "epsilon-caprolactam",
+      "ε-己内酰胺"
+    ]
+  },
+  {
+    "id": "SUB_WOLLASTONITE",
+    "name": "硅灰石",
+    "family": "inorganic_filler",
+    "formula": "CaSiO3",
+    "aliases": [
+      "CaSiO3",
+      "wollastonite",
+      "硅灰石"
+    ]
+  },
+  {
+    "id": "SUB_MYRISTIC",
+    "name": "肉豆蔻酸",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "myristic acid",
+      "肉豆蔻酸"
+    ]
+  },
+  {
+    "id": "SUB_MALEIC_ACID",
+    "name": "马来酸",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "maleic acid",
+      "马来酸"
+    ]
+  },
+  {
+    "id": "SUB_MALONIC",
+    "name": "丙二酸",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "malonic acid",
+      "丙二酸"
+    ]
+  },
+  {
+    "id": "SUB_PIMELIC",
+    "name": "庚二酸",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "pimelic acid",
+      "庚二酸"
+    ]
+  },
+  {
+    "id": "SUB_GRAPHITE_OXIDE",
+    "name": "氧化石墨",
+    "family": "carbon_filler",
+    "formula": null,
+    "aliases": [
+      "GtO",
+      "graphite oxide",
+      "氧化石墨"
+    ]
+  },
+  {
+    "id": "SUB_PPGA",
+    "name": "聚丙二醇丙烯酸酯",
+    "family": "grafting_monomer",
+    "formula": null,
+    "aliases": [
+      "PPGA",
+      "poly(propylene-glycol) acrylate",
+      "聚丙二醇丙烯酸酯"
+    ]
+  },
+  {
+    "id": "SUB_GMA",
+    "name": "甲基丙烯酸缩水甘油酯",
+    "family": "grafting_monomer",
+    "formula": null,
+    "aliases": [
+      "GMA",
+      "glycidyl methacrylate",
+      "甲基丙烯酸缩水甘油酯"
+    ]
+  },
+  {
+    "id": "SUB_DCP",
+    "name": "过氧化二异丙苯",
+    "family": "initiator",
+    "formula": null,
+    "aliases": [
+      "DCP",
+      "dicumyl peroxide",
+      "过氧化二异丙苯"
+    ]
+  },
+  {
+    "id": "SUB_PULP",
+    "name": "纸浆纤维",
+    "family": "natural_filler",
+    "formula": null,
+    "aliases": [
+      "cellulose pulp",
+      "pulp",
+      "pulp powder",
+      "纸浆纤维"
+    ]
+  },
+  {
+    "id": "SUB_MTMI",
+    "name": "3-异丙烯基-α,α-二甲基苄基异氰酸酯",
+    "family": "grafting_monomer",
+    "formula": null,
+    "aliases": [
+      "3-isopropenyl-alpha,alpha-dimethylbenzyl isocyanate",
+      "3-异丙烯基-α,α-二甲基苄基异氰酸酯",
+      "m-TMI"
+    ]
+  },
+  {
+    "id": "SUB_PP_G_MTMI",
+    "name": "m-TMI接枝聚丙烯",
+    "family": "grafted_polyolefin",
+    "formula": null,
+    "aliases": [
+      "PP-g-m-TMI",
+      "m-TMI接枝聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_LDPE",
+    "name": "低密度聚乙烯",
+    "family": "polyolefin",
+    "formula": null,
+    "aliases": [
+      "LDPE",
+      "low density polyethylene",
+      "低密度聚乙烯"
+    ]
+  },
+  {
+    "id": "SUB_LLDPE",
+    "name": "线性低密度聚乙烯",
+    "family": "polyolefin",
+    "formula": null,
+    "aliases": [
+      "LLDPE",
+      "linear low density polyethylene",
+      "线性低密度聚乙烯"
+    ]
+  },
+  {
+    "id": "SUB_ALUMINUM_ALLOY",
+    "name": "铝合金",
+    "family": "metal_adherend",
+    "formula": null,
+    "aliases": [
+      "AA5052",
+      "aluminum alloy",
+      "铝合金"
+    ]
+  },
+  {
+    "id": "SUB_SEBS",
+    "name": "苯乙烯-乙烯/丁烯-苯乙烯嵌段共聚物",
+    "family": "elastomer",
+    "formula": null,
+    "aliases": [
+      "SEBS",
+      "styrene ethylene butylene styrene",
+      "苯乙烯-乙烯/丁烯-苯乙烯嵌段共聚物"
+    ]
+  },
+  {
+    "id": "SUB_TMPTA",
+    "name": "三羟甲基丙烷三丙烯酸酯",
+    "family": "crosslinker",
+    "formula": null,
+    "aliases": [
+      "TMPTA",
+      "trimethylolpropane triacrylate",
+      "三羟甲基丙烷三丙烯酸酯"
+    ]
+  },
+  {
+    "id": "SUB_TAIC",
+    "name": "三烯丙基异氰脲酸酯",
+    "family": "crosslinker",
+    "formula": null,
+    "aliases": [
+      "TAIC",
+      "triallyl isocyanurate",
+      "三烯丙基异氰脲酸酯"
+    ]
+  },
+  {
+    "id": "SUB_ZINC_OXIDE",
+    "name": "氧化锌",
+    "family": "oxide_filler",
+    "formula": "ZnO",
+    "aliases": [
+      "ZnO",
+      "zinc oxide",
+      "氧化锌"
+    ]
+  },
+  {
+    "id": "SUB_BETA_CYCLODEXTRIN",
+    "name": "β-环糊精",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "beta cyclodextrin",
+      "β-CD",
+      "β-环糊精",
+      "环糊精"
+    ]
+  },
+  {
+    "id": "SUB_ACYLATED_BETA_CYCLODEXTRIN",
+    "name": "酰化两亲性β-环糊精",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "ACD",
+      "acylated beta cyclodextrin",
+      "amphiphilic cyclodextrin",
+      "酰化两亲性β-环糊精"
+    ]
+  },
+  {
+    "id": "SUB_VINYL_PYRROLIDONE",
+    "name": "N-乙烯基吡咯烷酮",
+    "family": "grafting_monomer",
+    "formula": null,
+    "aliases": [
+      "1-vinyl-2-pyrrolidinone",
+      "N-vinylpyrrolidone",
+      "N-乙烯基吡咯烷酮",
+      "NVP",
+      "VP"
+    ]
+  },
+  {
+    "id": "SUB_PEGDA",
+    "name": "聚乙二醇二丙烯酸酯",
+    "family": "crosslinker",
+    "formula": null,
+    "aliases": [
+      "PEGDA",
+      "polyethylene glycol diacrylate",
+      "聚乙二醇二丙烯酸酯"
+    ]
+  },
+  {
+    "id": "SUB_TWEEN20",
+    "name": "吐温20",
+    "family": "surfactant",
+    "formula": null,
+    "aliases": [
+      "Tw-20",
+      "Tween20",
+      "polysorbate20",
+      "吐温20"
+    ]
+  },
+  {
+    "id": "SUB_IODINE",
+    "name": "碘",
+    "family": "antibacterial_agent",
+    "formula": "I2",
+    "aliases": [
+      "I2",
+      "iodine",
+      "碘"
+    ]
+  },
+  {
+    "id": "SUB_RECYCLED_PP",
+    "name": "再生聚丙烯",
+    "family": "recycled_polyolefin",
+    "formula": null,
+    "aliases": [
+      "rPP",
+      "recycled polypropylene",
+      "再生聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_ETHYLENE_BUTENE_COPOLYMER",
+    "name": "乙烯-丁烯共聚物",
+    "family": "polyolefin_elastomer",
+    "formula": null,
+    "aliases": [
+      "ethylene-butene copolymer",
+      "乙烯-丁烯共聚物"
+    ]
+  },
+  {
+    "id": "SUB_POLYETHYLENEIMINE",
+    "name": "聚乙烯亚胺",
+    "family": "polyamine",
+    "formula": null,
+    "aliases": [
+      "PEI",
+      "polyethyleneimine",
+      "聚乙烯亚胺"
+    ]
+  },
+  {
+    "id": "SUB_SOYBEAN_OIL",
+    "name": "大豆油",
+    "family": "vegetable_oil",
+    "formula": null,
+    "aliases": [
+      "SO",
+      "soybean oil",
+      "大豆油"
+    ]
+  },
+  {
+    "id": "SUB_DIBUTYL_PHTHALATE",
+    "name": "邻苯二甲酸二丁酯",
+    "family": "organic_diluent",
+    "formula": null,
+    "aliases": [
+      "DBP",
+      "dibutyl phthalate",
+      "邻苯二甲酸二丁酯"
+    ]
+  },
+  {
+    "id": "SUB_SODIUM_CHLORITE",
+    "name": "亚氯酸钠",
+    "family": "oxidizing_reagent",
+    "formula": "NaClO2",
+    "aliases": [
+      "sodium chlorite",
+      "亚氯酸钠"
+    ]
+  },
+  {
+    "id": "SUB_TITANIUM_COMPOUND_COATING",
+    "name": "钛化合物表面层",
+    "family": "surface_coating",
+    "formula": null,
+    "aliases": [
+      "Ti mesh",
+      "titanized mesh",
+      "钛化合物表面层"
+    ]
+  },
+  {
+    "id": "SUB_HOLLOW_GLASS_MICROSPHERES",
+    "name": "空心玻璃微珠",
+    "family": "hollow_glass_microsphere",
+    "formula": null,
+    "aliases": [
+      "HGM",
+      "HL42",
+      "hollow glass microspheres",
+      "空心玻璃微珠"
+    ]
+  },
+  {
+    "id": "SUB_CELLULOSE_MICROFIBER",
+    "name": "纤维素微纤维",
+    "family": "cellulose_fiber",
+    "formula": null,
+    "aliases": [
+      "CMF",
+      "cellulose microfiber",
+      "ultrafine cellulose",
+      "纤维素微纤维"
+    ]
+  },
+  {
+    "id": "SUB_OCTADECYLAMINE",
+    "name": "十八胺",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "ODA",
+      "octadecylamine",
+      "十八胺"
+    ]
+  },
+  {
+    "id": "SUB_GLASS_BEADS",
+    "name": "空心玻璃珠",
+    "family": "glass_filler",
+    "formula": null,
+    "aliases": [
+      "glass beads",
+      "hollow glass beads",
+      "空心玻璃珠"
+    ]
+  },
+  {
+    "id": "SUB_AMORPHOUS_POLYOLEFIN_COPOLYMER",
+    "name": "无定形聚烯烃共聚物",
+    "family": "polyolefin_copolymer",
+    "formula": null,
+    "aliases": [
+      "amorphous polyolefin copolymer",
+      "无定形聚烯烃共聚物"
+    ]
+  },
+  {
+    "id": "SUB_POLYETHYLENE_WAX",
+    "name": "聚乙烯蜡",
+    "family": "dispersant",
+    "formula": null,
+    "aliases": [
+      "PE wax",
+      "polyethylene wax",
+      "聚乙烯蜡"
+    ]
+  },
+  {
+    "id": "SUB_EAA_ZINC_IONOMER",
+    "name": "乙烯-丙烯酸锌离聚物",
+    "family": "dispersant",
+    "formula": null,
+    "aliases": [
+      "Aclyn 295A",
+      "EAA zinc ionomer",
+      "乙烯-丙烯酸锌离聚物"
+    ]
+  },
+  {
+    "id": "SUB_PP_OH",
+    "name": "羟基官能化聚丙烯",
+    "family": "functionalized_polyolefin",
+    "formula": null,
+    "aliases": [
+      "PPOH",
+      "hydroxyl-functionalized polypropylene",
+      "羟基官能化聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_HYDROTALCITE",
+    "name": "水滑石",
+    "family": "inorganic_filler",
+    "formula": null,
+    "aliases": [
+      "HT",
+      "hydrotalcite",
+      "水滑石"
+    ]
+  },
+  {
+    "id": "SUB_ZINC_ADIPATE",
+    "name": "己二酸锌",
+    "family": "beta_nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "ZnAA",
+      "zinc adipate",
+      "己二酸锌"
+    ]
+  },
+  {
+    "id": "SUB_MMA",
+    "name": "甲基丙烯酸甲酯",
+    "family": "grafting_monomer",
+    "formula": "C5H8O2",
+    "aliases": [
+      "MMA",
+      "methyl methacrylate",
+      "甲基丙烯酸甲酯"
+    ]
+  },
+  {
+    "id": "SUB_PP_G_MMA",
+    "name": "甲基丙烯酸甲酯接枝聚丙烯",
+    "family": "grafted_polyolefin",
+    "formula": null,
+    "aliases": [
+      "MMA-grafted PP",
+      "PP-g-MMA",
+      "甲基丙烯酸甲酯接枝聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_LCBPP",
+    "name": "长链支化聚丙烯",
+    "family": "branched_polyolefin",
+    "formula": null,
+    "aliases": [
+      "LCBPP",
+      "long-chain branched polypropylene",
+      "长链支化聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_MCP",
+    "name": "机械化学改性纤维素颗粒",
+    "family": "modified_biofiller",
+    "formula": null,
+    "aliases": [
+      "MCP",
+      "mechanochemically modified cellulose particles",
+      "机械化学改性纤维素颗粒"
+    ]
+  },
+  {
+    "id": "SUB_XYLENE",
+    "name": "二甲苯",
+    "family": "solvent",
+    "formula": null,
+    "aliases": [
+      "xylene",
+      "二甲苯"
+    ]
+  },
+  {
+    "id": "SUB_ETHANOL",
+    "name": "乙醇",
+    "family": "solvent",
+    "formula": "C2H6O",
+    "aliases": [
+      "ethanol",
+      "乙醇"
+    ]
+  },
+  {
+    "id": "SUB_ACETONE",
+    "name": "丙酮",
+    "family": "solvent",
+    "formula": "C3H6O",
+    "aliases": [
+      "acetone",
+      "丙酮"
+    ]
+  },
+  {
+    "id": "SUB_BORON_NITRIDE",
+    "name": "氮化硼",
+    "family": "inorganic_filler",
+    "formula": "BN",
+    "aliases": [
+      "boron nitride",
+      "h-BN",
+      "hexagonal boron nitride",
+      "氮化硼"
+    ]
+  },
+  {
+    "id": "SUB_GLUCOSE_MONOHYDRATE",
+    "name": "一水合葡萄糖",
+    "family": "sugar",
+    "formula": "C6H12O6·H2O",
+    "aliases": [
+      "glucose monohydrate",
+      "一水合葡萄糖"
+    ]
+  },
+  {
+    "id": "SUB_AMORPHOUS_CARBON",
+    "name": "无定形碳",
+    "family": "carbon_coating",
+    "formula": null,
+    "aliases": [
+      "aC",
+      "amorphous carbon",
+      "无定形碳"
+    ]
+  },
+  {
+    "id": "SUB_EPDM",
+    "name": "三元乙丙橡胶",
+    "family": "elastomer",
+    "formula": null,
+    "aliases": [
+      "EPDM",
+      "ethylene propylene diene monomer rubber",
+      "三元乙丙橡胶"
+    ]
+  },
+  {
+    "id": "SUB_EVA",
+    "name": "乙烯-醋酸乙烯酯共聚物",
+    "family": "polymer_blend",
+    "formula": null,
+    "aliases": [
+      "EVA",
+      "ethylene-vinyl acetate",
+      "乙烯-醋酸乙烯酯共聚物"
+    ]
+  },
+  {
+    "id": "SUB_POLYETHER_POLYOL",
+    "name": "聚醚多元醇",
+    "family": "polyether_elastomer",
+    "formula": null,
+    "aliases": [
+      "POP",
+      "polyether polyol",
+      "聚醚多元醇"
+    ]
+  },
+  {
+    "id": "SUB_MAGNESIUM_OXYSULFATE",
+    "name": "碱式硫酸镁",
+    "family": "inorganic_whisker",
+    "formula": "MgSO4·xMg(OH)2·yH2O",
+    "aliases": [
+      "MOS whisker",
+      "magnesium oxysulfate",
+      "nano-whisker",
+      "碱式硫酸镁"
+    ]
+  },
+  {
+    "id": "SUB_BUTYL_ACRYLATE",
+    "name": "丙烯酸丁酯",
+    "family": "monomer",
+    "formula": "C7H12O2",
+    "aliases": [
+      "butyl acrylate",
+      "丙烯酸丁酯"
+    ]
+  },
+  {
+    "id": "SUB_SODIUM_DODECYL_SULFATE",
+    "name": "十二烷基硫酸钠",
+    "family": "surfactant",
+    "formula": "C12H25NaO4S",
+    "aliases": [
+      "SDS",
+      "sodium dodecyl sulfate",
+      "十二烷基硫酸钠"
+    ]
+  },
+  {
+    "id": "SUB_LAURIC_ACID",
+    "name": "月桂酸",
+    "family": "fatty_acid",
+    "formula": "C12H24O2",
+    "aliases": [
+      "lauric acid",
+      "月桂酸"
+    ]
+  },
+  {
+    "id": "SUB_MELAMINE",
+    "name": "三聚氰胺",
+    "family": "chemical_reagent",
+    "formula": "C3H6N6",
+    "aliases": [
+      "MEL",
+      "melamine",
+      "三聚氰胺"
+    ]
+  },
+  {
+    "id": "SUB_FORMALDEHYDE",
+    "name": "甲醛",
+    "family": "chemical_reagent",
+    "formula": "CH2O",
+    "aliases": [
+      "HCHO",
+      "formaldehyde",
+      "甲醛"
+    ]
+  },
+  {
+    "id": "SUB_P_AMINOBENZENESULFONIC_ACID",
+    "name": "对氨基苯磺酸",
+    "family": "chemical_reagent",
+    "formula": "C6H7NO3S",
+    "aliases": [
+      "ASC",
+      "p-aminobenzene sulfonic acid",
+      "对氨基苯磺酸"
+    ]
+  },
+  {
+    "id": "SUB_AMINOETHYLPIPERAZINE",
+    "name": "1-(2-氨乙基)哌嗪",
+    "family": "chemical_reagent",
+    "formula": "C6H15N3",
+    "aliases": [
+      "1-(2-aminoethyl)piperazine",
+      "1-(2-氨乙基)哌嗪",
+      "AEP"
+    ]
+  },
+  {
+    "id": "SUB_CFA_UNSPEC",
+    "name": "成炭发泡剂（组成未披露）",
+    "family": "flame_retardant",
+    "formula": null,
+    "aliases": [
+      "CFA",
+      "charring-foaming agent",
+      "成炭发泡剂（组成未披露）"
+    ]
+  },
+  {
+    "id": "SUB_PIGMENT_GREEN7",
+    "name": "颜料绿7",
+    "family": "pigment",
+    "formula": null,
+    "aliases": [
+      "PG7",
+      "Pigment Green 7",
+      "phthalocyanine green",
+      "颜料绿7"
+    ]
+  },
+  {
+    "id": "SUB_PIGMENT_RED122",
+    "name": "颜料红122",
+    "family": "pigment",
+    "formula": "C22H16N2O2",
+    "aliases": [
+      "PR122",
+      "Pigment Red 122",
+      "quinacridone red 122",
+      "颜料红122"
+    ]
+  },
+  {
+    "id": "SUB_SBR",
+    "name": "丁苯橡胶",
+    "family": "elastomer",
+    "formula": null,
+    "aliases": [
+      "SBR",
+      "styrene-butadiene rubber",
+      "丁苯橡胶"
+    ]
+  },
+  {
+    "id": "SUB_POLYSTYRENE",
+    "name": "聚苯乙烯",
+    "family": "polymer_blend",
+    "formula": null,
+    "aliases": [
+      "PS",
+      "polystyrene",
+      "聚苯乙烯"
+    ]
+  },
+  {
+    "id": "SUB_ABS",
+    "name": "丙烯腈-丁二烯-苯乙烯共聚物",
+    "family": "polymer_blend",
+    "formula": null,
+    "aliases": [
+      "ABS",
+      "acrylonitrile-butadiene-styrene",
+      "丙烯腈-丁二烯-苯乙烯共聚物"
+    ]
+  },
+  {
+    "id": "SUB_BAMBOO_FIBER",
+    "name": "竹纤维",
+    "family": "natural_fiber",
+    "formula": null,
+    "aliases": [
+      "bamboo fiber",
+      "竹纤维"
+    ]
+  },
+  {
+    "id": "SUB_KH792",
+    "name": "硅烷偶联剂KH-792（结构按原文代码保留）",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "KH-792",
+      "KH792",
+      "硅烷偶联剂KH-792（结构按原文代码保留）"
+    ]
+  },
+  {
+    "id": "SUB_SFEES",
+    "name": "葵花籽油脂肪酸乙酯",
+    "family": "fatty_acid_ester",
+    "formula": null,
+    "aliases": [
+      "SFEEs",
+      "sunflower oil fatty acid ethyl esters",
+      "葵花籽油脂肪酸乙酯"
+    ]
+  },
+  {
+    "id": "SUB_PE_ELASTOMER",
+    "name": "支化聚乙烯弹性体",
+    "family": "polyethylene_elastomer",
+    "formula": null,
+    "aliases": [
+      "Ni3 polyethylene elastomer",
+      "branched polyethylene elastomer",
+      "支化聚乙烯弹性体"
+    ]
+  },
+  {
+    "id": "SUB_CARBON_BLACK",
+    "name": "炭黑",
+    "family": "conductive_filler",
+    "formula": "C",
+    "aliases": [
+      "CB",
+      "carbon black",
+      "炭黑"
+    ]
+  },
+  {
+    "id": "SUB_DATE_PALM_WOOD_FLOUR",
+    "name": "枣椰叶木粉",
+    "family": "natural_filler",
+    "formula": null,
+    "aliases": [
+      "WF",
+      "date palm wood flour",
+      "枣椰叶木粉"
+    ]
+  },
+  {
+    "id": "SUB_TINUVIN326",
+    "name": "紫外线吸收剂Tinuvin 326",
+    "family": "UV_absorber",
+    "formula": null,
+    "aliases": [
+      "Tinuvin 326",
+      "UVA 326",
+      "紫外线吸收剂Tinuvin 326"
+    ]
+  },
+  {
+    "id": "SUB_SUGARCANE_BAGASSE",
+    "name": "甘蔗渣纤维",
+    "family": "natural_filler",
+    "formula": null,
+    "aliases": [
+      "SCB",
+      "sugarcane bagasse",
+      "甘蔗渣纤维"
+    ]
+  },
+  {
+    "id": "SUB_NBR",
+    "name": "丁腈橡胶",
+    "family": "elastomer",
+    "formula": null,
+    "aliases": [
+      "NBR",
+      "acrylonitrile butadiene rubber",
+      "丁腈橡胶"
+    ]
+  },
+  {
+    "id": "SUB_SODIUM_HYDROXIDE",
+    "name": "氢氧化钠",
+    "family": "chemical_reagent",
+    "formula": "NaOH",
+    "aliases": [
+      "NaOH",
+      "sodium hydroxide",
+      "氢氧化钠"
+    ]
+  },
+  {
+    "id": "SUB_ACETIC_ANHYDRIDE",
+    "name": "乙酸酐",
+    "family": "chemical_reagent",
+    "formula": "C4H6O3",
+    "aliases": [
+      "acetic anhydride",
+      "乙酸酐"
+    ]
+  },
+  {
+    "id": "SUB_3_APS_UNRESOLVED",
+    "name": "3-APS（原文三乙氧基/三甲氧基名称冲突）",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "3-APS",
+      "3-APS（原文三乙氧基/三甲氧基名称冲突）",
+      "3-aminopropyltriethoxysilane",
+      "3-aminopropyltrimethoxysilane"
+    ]
+  },
+  {
+    "id": "SUB_RECYCLED_TIRE_RUBBER",
+    "name": "再生轮胎橡胶粉",
+    "family": "recycled_elastomer",
+    "formula": null,
+    "aliases": [
+      "RR",
+      "recycled rubber",
+      "tire rubber powder",
+      "再生轮胎橡胶粉"
+    ]
+  },
+  {
+    "id": "SUB_BACILLUS_LICHENIFORMIS",
+    "name": "地衣芽孢杆菌",
+    "family": "microorganism",
+    "formula": null,
+    "aliases": [
+      "Bacillus licheniformis",
+      "GSHC01",
+      "地衣芽孢杆菌"
+    ]
+  },
+  {
+    "id": "SUB_YEAST_EXTRACT",
+    "name": "酵母提取物",
+    "family": "culture_nutrient",
+    "formula": null,
+    "aliases": [
+      "yeast extract",
+      "酵母提取物"
+    ]
+  },
+  {
+    "id": "SUB_GLUCOSE_FOR_CULTURE",
+    "name": "葡萄糖",
+    "family": "culture_nutrient",
+    "formula": "C6H12O6",
+    "aliases": [
+      "glucose",
+      "葡萄糖"
+    ]
+  },
+  {
+    "id": "SUB_SILANE_COUPLING_AGENT_UNSPEC",
+    "name": "硅烷偶联剂（具体型号未报告）",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "silane coupling agent",
+      "硅烷偶联剂（具体型号未报告）"
+    ]
+  },
+  {
+    "id": "SUB_FLUOROSILANE_KY164",
+    "name": "全氟聚醚接枝硅烷KY-164",
+    "family": "fluorosilane_coating",
+    "formula": null,
+    "aliases": [
+      "KY-164",
+      "perfluoroether-grafted silane",
+      "全氟聚醚接枝硅烷KY-164"
+    ]
+  },
+  {
+    "id": "SUB_HFE7200",
+    "name": "氢氟醚HFE-7200",
+    "family": "solvent",
+    "formula": null,
+    "aliases": [
+      "HFE-7200",
+      "氢氟醚HFE-7200"
+    ]
+  },
+  {
+    "id": "SUB_MONOETHANOLAMINE",
+    "name": "单乙醇胺",
+    "family": "absorbent",
+    "formula": "C2H7NO",
+    "aliases": [
+      "MEA",
+      "monoethanolamine",
+      "单乙醇胺"
+    ]
+  },
+  {
+    "id": "SUB_ZINC_STEARATE",
+    "name": "硬脂酸锌",
+    "family": "lubricant",
+    "formula": "C36H70O4Zn",
+    "aliases": [
+      "zinc stearate",
+      "硬脂酸锌"
+    ]
+  },
+  {
+    "id": "SUB_PET",
+    "name": "聚对苯二甲酸乙二醇酯",
+    "family": "polyester",
+    "formula": "(C10H8O4)n",
+    "aliases": [
+      "PET",
+      "polyethylene terephthalate",
+      "聚对苯二甲酸乙二醇酯",
+      "聚酯"
+    ]
+  },
+  {
+    "id": "SUB_GNP",
+    "name": "石墨烯纳米片",
+    "family": "carbon_nanofiller",
+    "formula": "C",
+    "aliases": [
+      "GNP",
+      "graphene nanoplatelet",
+      "graphene nanoplatelets",
+      "石墨烯纳米片"
+    ]
+  },
+  {
+    "id": "SUB_PLA",
+    "name": "聚乳酸",
+    "family": "biopolyester",
+    "formula": "(C3H4O2)n",
+    "aliases": [
+      "PLA",
+      "polylactic acid",
+      "聚乳酸",
+      "聚乳酸树脂"
+    ]
+  },
+  {
+    "id": "SUB_COTTON_STALK_FIBER",
+    "name": "棉秆粉/纤维",
+    "family": "natural_fiber",
+    "formula": null,
+    "aliases": [
+      "CFS",
+      "cotton stalk fiber",
+      "cotton stalk flour",
+      "棉秆粉",
+      "棉秆粉/纤维",
+      "棉秆纤维"
+    ]
+  },
+  {
+    "id": "SUB_PBE",
+    "name": "丙烯基弹性体",
+    "family": "polyolefin_elastomer",
+    "formula": null,
+    "aliases": [
+      "PBE",
+      "propylene-based elastomer",
+      "丙烯基弹性体"
+    ]
+  },
+  {
+    "id": "SUB_PTW_COMPATIBILIZER",
+    "name": "乙烯-丁烯-丙烯酸酯三元共聚物相容剂",
+    "family": "polymer_compatibilizer",
+    "formula": null,
+    "aliases": [
+      "PTW",
+      "ethylene-butylene-acrylate terpolymer",
+      "乙烯-丁烯-丙烯酸酯三元共聚物相容剂"
+    ]
+  },
+  {
+    "id": "SUB_MICA",
+    "name": "云母",
+    "family": "inorganic_mineral",
+    "formula": null,
+    "aliases": [
+      "biotite",
+      "mica",
+      "云母",
+      "黑云母"
+    ]
+  },
+  {
+    "id": "SUB_CALCINED_KAOLIN",
+    "name": "煅烧高岭土",
+    "family": "inorganic_mineral",
+    "formula": null,
+    "aliases": [
+      "CK",
+      "calcined kaolin",
+      "calcined kaolinite",
+      "煅烧高岭土",
+      "煅烧高岭石"
+    ]
+  },
+  {
+    "id": "SUB_ERUCAMIDE",
+    "name": "芥酸酰胺",
+    "family": "organic_additive",
+    "formula": null,
+    "aliases": [
+      "EAM",
+      "erucamide",
+      "芥酸酰胺"
+    ]
+  },
+  {
+    "id": "SUB_NA21_UNSPEC",
+    "name": "NA-21成核剂（文献组成待核）",
+    "family": "nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "NA-21",
+      "NA-21成核剂（文献组成待核）",
+      "NA21"
+    ]
+  },
+  {
+    "id": "SUB_BETA_NUCLEATOR_UNSPEC",
+    "name": "β成核剂（结构未披露）",
+    "family": "nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "beta nucleating agent",
+      "β-nucleating agent",
+      "β成核剂",
+      "β成核剂（结构未披露）",
+      "β晶成核剂"
+    ]
+  },
+  {
+    "id": "SUB_ASPHALT",
+    "name": "沥青",
+    "family": "bituminous_material",
+    "formula": null,
+    "aliases": [
+      "asphalt",
+      "bitumen",
+      "沥青"
+    ]
+  },
+  {
+    "id": "SUB_COMPOUND_STABILIZER_UNSPEC",
+    "name": "复合稳定剂（组成未披露）",
+    "family": "stabilizer",
+    "formula": null,
+    "aliases": [
+      "compound stabilizer",
+      "复合稳定剂",
+      "复合稳定剂（组成未披露）"
+    ]
+  },
+  {
+    "id": "SUB_COMPOUND_ANTIOXIDANT_UNSPEC",
+    "name": "复配抗氧剂（组成未披露）",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "compound antioxidant",
+      "复配抗氧剂",
+      "复配抗氧剂（组成未披露）"
+    ]
+  },
+  {
+    "id": "SUB_X500F_MODIFIER",
+    "name": "X500F增韧剂（商品牌号）",
+    "family": "impact_modifier",
+    "formula": null,
+    "aliases": [
+      "X500F",
+      "X500F增韧剂（商品牌号）"
+    ]
+  },
+  {
+    "id": "SUB_POTASSIUM_PERMANGANATE",
+    "name": "高锰酸钾",
+    "family": "oxidizing_agent",
+    "formula": null,
+    "aliases": [
+      "KMnO4",
+      "potassium permanganate",
+      "高锰酸钾"
+    ]
+  },
+  {
+    "id": "SUB_MUSSEL_SHELL",
+    "name": "贻贝壳粉",
+    "family": "biogenic_mineral_filler",
+    "formula": null,
+    "aliases": [
+      "mussel shell",
+      "mussel shell powder",
+      "贝壳粉",
+      "贻贝壳粉"
+    ]
+  },
+  {
+    "id": "SUB_SISAL_FIBER",
+    "name": "剑麻纤维",
+    "family": "natural_fiber",
+    "formula": null,
+    "aliases": [
+      "sisal fiber",
+      "sisal fibres",
+      "剑麻纤维"
+    ]
+  },
+  {
+    "id": "SUB_CTF_FIBER",
+    "name": "Corypha taliera果纤维",
+    "family": "natural_fiber",
+    "formula": null,
+    "aliases": [
+      "CTF",
+      "CTFF",
+      "Corypha taliera fiber",
+      "Corypha taliera fruit fiber",
+      "Corypha taliera果纤维"
+    ]
+  },
+  {
+    "id": "SUB_COF_V",
+    "name": "乙烯基共价有机框架COF-V",
+    "family": "covalent_organic_framework",
+    "formula": null,
+    "aliases": [
+      "COF-V",
+      "vinyl-functionalized covalent organic framework",
+      "乙烯基共价有机框架COF-V"
+    ]
+  },
+  {
+    "id": "SUB_DMDBS",
+    "name": "1,3:2,4-二(3,4-二甲基亚苄基)山梨醇",
+    "family": "nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "1,3:2,4-di(3,4-dimethylbenzylidene)sorbitol",
+      "1,3:2,4-二(3,4-二甲基亚苄基)山梨醇",
+      "DMDBS"
+    ]
+  },
+  {
+    "id": "SUB_WBG_II_UNSPEC",
+    "name": "稀土复合成核剂WBG-II",
+    "family": "nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "WBG II",
+      "WBG-II",
+      "稀土复合成核剂WBG-II"
+    ]
+  },
+  {
+    "id": "SUB_MTMS_AEROGEL",
+    "name": "甲基三甲氧基硅烷基有机硅气凝胶",
+    "family": "organosilica_coating",
+    "formula": null,
+    "aliases": [
+      "MTMS aerogel",
+      "methyltrimethoxysilane aerogel",
+      "甲基三甲氧基硅烷基有机硅气凝胶"
+    ]
+  },
+  {
+    "id": "SUB_POLYURETHANE",
+    "name": "聚氨酯",
+    "family": "polyurethane",
+    "formula": null,
+    "aliases": [
+      "PU",
+      "polyurethane",
+      "聚氨酯"
+    ]
+  },
+  {
+    "id": "SUB_MN_DIOXIDE_X",
+    "name": "缺氧二氧化锰",
+    "family": "manganese_oxide_coating",
+    "formula": null,
+    "aliases": [
+      "MnO2-x",
+      "manganese dioxide oxygen vacancy coating",
+      "缺氧二氧化锰"
+    ]
+  },
+  {
+    "id": "SUB_SEPIOLITE",
+    "name": "海泡石",
+    "family": "inorganic_fiber_mineral",
+    "formula": null,
+    "aliases": [
+      "Sep",
+      "sepiolite",
+      "海泡石"
+    ]
+  },
+  {
+    "id": "SUB_CERIUM_DIOXIDE",
+    "name": "二氧化铈",
+    "family": "metal_oxide",
+    "formula": null,
+    "aliases": [
+      "CeO2",
+      "ceria",
+      "cerium oxide",
+      "二氧化铈"
+    ]
+  },
+  {
+    "id": "SUB_DBHP",
+    "name": "3,5-二叔丁基-4-羟基苯丙酸",
+    "family": "phenolic_antioxidant",
+    "formula": null,
+    "aliases": [
+      "3,5-di-tert-butyl-4-hydroxyphenylpropionic acid",
+      "3,5-二叔丁基-4-羟基苯丙酸",
+      "DBHP"
+    ]
+  },
+  {
+    "id": "SUB_CAFFEIC_ACID",
+    "name": "咖啡酸",
+    "family": "polyphenol",
+    "formula": null,
+    "aliases": [
+      "CA",
+      "caffeic acid",
+      "咖啡酸"
+    ]
+  },
+  {
+    "id": "SUB_CHITOSAN",
+    "name": "壳聚糖",
+    "family": "polysaccharide_coating",
+    "formula": null,
+    "aliases": [
+      "CH",
+      "chitosan",
+      "壳聚糖"
+    ]
+  },
+  {
+    "id": "SUB_QUAT_CHITOSAN",
+    "name": "季铵化壳聚糖",
+    "family": "cationic_polysaccharide",
+    "formula": null,
+    "aliases": [
+      "QCH",
+      "quaternary chitosan",
+      "季铵化壳聚糖"
+    ]
+  },
+  {
+    "id": "SUB_JUNIPER_EXTRACT",
+    "name": "刺柏针叶提取物",
+    "family": "plant_extract",
+    "formula": null,
+    "aliases": [
+      "JUN",
+      "Juniperus oxycedrus extract",
+      "刺柏针叶提取物"
+    ]
+  },
+  {
+    "id": "SUB_BLACKBERRY_EXTRACT",
+    "name": "黑莓叶提取物",
+    "family": "plant_extract",
+    "formula": null,
+    "aliases": [
+      "BBL",
+      "Rubus fruticosus leaf extract",
+      "黑莓叶提取物"
+    ]
+  },
+  {
+    "id": "SUB_HTAB",
+    "name": "十六烷基三甲基溴化铵",
+    "family": "surfactant",
+    "formula": null,
+    "aliases": [
+      "HTAB",
+      "hexadecyltrimethylammonium bromide",
+      "十六烷基三甲基溴化铵"
+    ]
+  },
+  {
+    "id": "SUB_LATP",
+    "name": "磷酸钛铝锂",
+    "family": "solid_electrolyte",
+    "formula": "Li1.3Al0.3Ti1.7(PO4)3",
+    "aliases": [
+      "LATP",
+      "Li1.3Al0.3Ti1.7(PO4)3",
+      "磷酸钛铝锂"
+    ]
+  },
+  {
+    "id": "SUB_PVDF",
+    "name": "聚偏氟乙烯",
+    "family": "polymer_binder",
+    "formula": null,
+    "aliases": [
+      "PVDF",
+      "聚偏氟乙烯"
+    ]
+  },
+  {
+    "id": "SUB_NMP",
+    "name": "N-甲基-2-吡咯烷酮",
+    "family": "solvent",
+    "formula": null,
+    "aliases": [
+      "N-甲基-2-吡咯烷酮",
+      "NMP"
+    ]
+  },
+  {
+    "id": "SUB_PGMA",
+    "name": "聚甲基丙烯酸缩水甘油酯",
+    "family": "grafted_polymer_layer",
+    "formula": null,
+    "aliases": [
+      "PGMA",
+      "poly(glycidyl methacrylate)",
+      "聚甲基丙烯酸缩水甘油酯"
+    ]
+  },
+  {
+    "id": "SUB_HSA",
+    "name": "人血清白蛋白",
+    "family": "protein_coating",
+    "formula": null,
+    "aliases": [
+      "HSA",
+      "human serum albumin",
+      "人血清白蛋白"
+    ]
+  },
+  {
+    "id": "SUB_POLOXAMINE_T1107",
+    "name": "Poloxamine T1107",
+    "family": "polyether_block_copolymer",
+    "formula": null,
+    "aliases": [
+      "Poloxamine T1107",
+      "T1107",
+      "Tetronic 1107"
+    ]
+  },
+  {
+    "id": "SUB_FIBRIN_SEALANT",
+    "name": "纖維蛋白密封胶",
+    "family": "medical_adhesive",
+    "formula": null,
+    "aliases": [
+      "Tisseel",
+      "fibrin sealant",
+      "纖維蛋白密封胶"
+    ]
+  },
+  {
+    "id": "SUB_NANODIAMOND",
+    "name": "纳米金刚石",
+    "family": "carbon_nanofiller",
+    "formula": null,
+    "aliases": [
+      "ND",
+      "nanodiamond",
+      "纳米金刚石"
+    ]
+  },
+  {
+    "id": "SUB_PP_WAX",
+    "name": "聚丙烯蜡",
+    "family": "polyolefin_wax",
+    "formula": null,
+    "aliases": [
+      "PPW",
+      "polypropylene wax",
+      "聚丙烯蜡"
+    ]
+  },
+  {
+    "id": "SUB_PP_G_GMA",
+    "name": "甲基丙烯酸缩水甘油酯接枝聚丙烯",
+    "family": "grafted_polyolefin",
+    "formula": null,
+    "aliases": [
+      "PP-g-GMA",
+      "甲基丙烯酸缩水甘油酯接枝聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_ZIRCONIA",
+    "name": "二氧化锆",
+    "family": "oxide_filler",
+    "formula": "ZrO2",
+    "aliases": [
+      "ZrO2",
+      "zirconia",
+      "二氧化锆"
+    ]
+  },
+  {
+    "id": "SUB_STYRENE_GRAFTED_PP",
+    "name": "苯乙烯接枝聚丙烯",
+    "family": "grafted_polyolefin",
+    "formula": null,
+    "aliases": [
+      "PPg",
+      "styrene-grafted PP",
+      "苯乙烯接枝聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_DISPERSE_RED_92",
+    "name": "分散红92",
+    "family": "dye",
+    "formula": null,
+    "aliases": [
+      "Coralene Red BEL",
+      "Disperse Red 92",
+      "分散红92"
+    ]
+  },
+  {
+    "id": "SUB_DISPERSANT_UNSPEC",
+    "name": "分散剂（商品Segapers DPG）",
+    "family": "textile_dispersant",
+    "formula": null,
+    "aliases": [
+      "Segapers DPG",
+      "分散剂（商品Segapers DPG）"
+    ]
+  },
+  {
+    "id": "SUB_LEVELER_UNSPEC",
+    "name": "匀染剂（商品Segenal Dft Liq.）",
+    "family": "textile_leveling_agent",
+    "formula": null,
+    "aliases": [
+      "Segenal Dft Liq.",
+      "匀染剂（商品Segenal Dft Liq.）"
+    ]
+  },
+  {
+    "id": "SUB_ORTHOPHOSPHORIC_ACID",
+    "name": "正磷酸",
+    "family": "chemical_reagent",
+    "formula": "H3PO4",
+    "aliases": [
+      "H3PO4",
+      "orthophosphoric acid",
+      "正磷酸"
+    ]
+  },
+  {
+    "id": "SUB_FERROCENE",
+    "name": "二茂铁",
+    "family": "catalyst",
+    "formula": "Fe(C5H5)2",
+    "aliases": [
+      "Fc",
+      "ferrocene",
+      "二茂铁"
+    ]
+  },
+  {
+    "id": "SUB_LAYERED_DOUBLE_HYDROXIDE",
+    "name": "镁铝层状双氢氧化物",
+    "family": "layered_double_hydroxide",
+    "formula": null,
+    "aliases": [
+      "LDH",
+      "MgAl-LDH",
+      "镁铝层状双氢氧化物"
+    ]
+  },
+  {
+    "id": "SUB_ROSMARINIC_ACID",
+    "name": "迷迭香酸",
+    "family": "polyphenol",
+    "formula": null,
+    "aliases": [
+      "RA-H",
+      "rosmarinic acid",
+      "迷迭香酸"
+    ]
+  },
+  {
+    "id": "SUB_EUGENOL",
+    "name": "丁香酚",
+    "family": "phenolic_compound",
+    "formula": null,
+    "aliases": [
+      "EU",
+      "eugenol",
+      "丁香酚"
+    ]
+  },
+  {
+    "id": "SUB_SAGE_EXTRACT",
+    "name": "鼠尾草提取物",
+    "family": "plant_extract",
+    "formula": null,
+    "aliases": [
+      "Salvia officinalis extract",
+      "sage extract",
+      "鼠尾草提取物"
+    ]
+  },
+  {
+    "id": "SUB_CLOVE_EXTRACT",
+    "name": "丁香花蕾提取物",
+    "family": "plant_extract",
+    "formula": null,
+    "aliases": [
+      "clove bud extract",
+      "丁香花蕾提取物"
+    ]
+  },
+  {
+    "id": "SUB_LDH_RA",
+    "name": "迷迭香酸负载层状双氢氧化物",
+    "family": "functional_hybrid_coating",
+    "formula": null,
+    "aliases": [
+      "LDH-RA",
+      "LDH-RAsyn",
+      "迷迭香酸负载层状双氢氧化物"
+    ]
+  },
+  {
+    "id": "SUB_LDH_EU",
+    "name": "丁香酚负载层状双氢氧化物",
+    "family": "functional_hybrid_coating",
+    "formula": null,
+    "aliases": [
+      "LDH-EU",
+      "LDH-EUsyn",
+      "丁香酚负载层状双氢氧化物"
+    ]
+  },
+  {
+    "id": "SUB_BAMBOO_POWDER",
+    "name": "竹粉",
+    "family": "natural_filler",
+    "formula": null,
+    "aliases": [
+      "BP",
+      "bamboo powder",
+      "竹粉"
+    ]
+  },
+  {
+    "id": "SUB_BORAX",
+    "name": "硼砂",
+    "family": "borate_reagent",
+    "formula": "Na2B4O7·10H2O",
+    "aliases": [
+      "BX",
+      "borax",
+      "硼砂"
+    ]
+  },
+  {
+    "id": "SUB_PIPERAZINE_PYROPHOSPHATE",
+    "name": "哌嗪焦磷酸盐",
+    "family": "flame_retardant",
+    "formula": null,
+    "aliases": [
+      "PAPP",
+      "piperazine pyrophosphate",
+      "哌嗪焦磷酸盐"
+    ]
+  },
+  {
+    "id": "SUB_AEO",
+    "name": "硬脂醇聚氧乙烯醚",
+    "family": "surfactant",
+    "formula": null,
+    "aliases": [
+      "AEO",
+      "stearyl-alcohol poly(ethylene oxide) ether",
+      "硬脂醇聚氧乙烯醚"
+    ]
+  },
+  {
+    "id": "SUB_TETRACHLOROMETHANE",
+    "name": "四氯化碳",
+    "family": "swelling_solvent",
+    "formula": "CCl4",
+    "aliases": [
+      "carbon tetrachloride",
+      "tetrachloromethane",
+      "四氯化碳"
+    ]
+  },
+  {
+    "id": "SUB_TETRALIN",
+    "name": "四氢萘",
+    "family": "swelling_solvent",
+    "formula": "C10H12",
+    "aliases": [
+      "tetrahydronaphthalene",
+      "tetralin",
+      "四氢萘"
+    ]
+  },
+  {
+    "id": "SUB_PE_COPOLYMER",
+    "name": "丙烯-乙烯共聚物",
+    "family": "polypropylene_copolymer",
+    "formula": null,
+    "aliases": [
+      "P-E",
+      "poly(propylene-co-ethylene)",
+      "丙烯-乙烯共聚物"
+    ]
+  },
+  {
+    "id": "SUB_PB_COPOLYMER",
+    "name": "丙烯-1-丁烯共聚物",
+    "family": "polypropylene_copolymer",
+    "formula": null,
+    "aliases": [
+      "P-B",
+      "poly(propylene-co-butene)",
+      "丙烯-1-丁烯共聚物"
+    ]
+  },
+  {
+    "id": "SUB_PEB_TERPOLYMER",
+    "name": "丙烯-乙烯-1-丁烯三元共聚物",
+    "family": "polypropylene_terpolymer",
+    "formula": null,
+    "aliases": [
+      "P-E-B",
+      "poly(propylene-co-ethylene-co-butene)",
+      "丙烯-乙烯-1-丁烯三元共聚物"
+    ]
+  },
+  {
+    "id": "SUB_CEMENT_GRADE_G",
+    "name": "G级油井水泥",
+    "family": "cementitious_matrix",
+    "formula": null,
+    "aliases": [
+      "G-grade cement",
+      "G级油井水泥"
+    ]
+  },
+  {
+    "id": "SUB_WATER",
+    "name": "水",
+    "family": "solvent",
+    "formula": "H2O",
+    "aliases": [
+      "H2O",
+      "water",
+      "水"
+    ]
+  },
+  {
+    "id": "SUB_METHANOL",
+    "name": "甲醇",
+    "family": "alcohol_solvent",
+    "formula": "CH4O",
+    "aliases": [
+      "CH3OH",
+      "methanol",
+      "甲醇"
+    ]
+  },
+  {
+    "id": "SUB_CATECHOL",
+    "name": "邻苯二酚",
+    "family": "phenolic_compound",
+    "formula": "C6H6O2",
+    "aliases": [
+      "catechol",
+      "邻苯二酚"
+    ]
+  },
+  {
+    "id": "SUB_FLUID_LOSS_SD18",
+    "name": "降失水剂SD-18",
+    "family": "cement_additive",
+    "formula": null,
+    "aliases": [
+      "SD-18",
+      "降失水剂SD-18"
+    ]
+  },
+  {
+    "id": "SUB_DISPERSANT_SD35",
+    "name": "分散剂SD-35",
+    "family": "cement_additive",
+    "formula": null,
+    "aliases": [
+      "SD-35",
+      "分散剂SD-35"
+    ]
+  },
+  {
+    "id": "SUB_TEPA",
+    "name": "四乙烯五胺",
+    "family": "polyamine",
+    "formula": null,
+    "aliases": [
+      "TEPA",
+      "四乙烯五胺"
+    ]
+  },
+  {
+    "id": "SUB_ACRYLONITRILE",
+    "name": "丙烯腈",
+    "family": "monomer",
+    "formula": "C3H3N",
+    "aliases": [
+      "AN",
+      "acrylonitrile",
+      "丙烯腈"
+    ]
+  },
+  {
+    "id": "SUB_HYDROXYLAMINE_HCL",
+    "name": "盐酸羟胺",
+    "family": "chemical_reagent",
+    "formula": null,
+    "aliases": [
+      "NH2OH·HCl",
+      "hydroxylamine hydrochloride",
+      "盐酸羟胺"
+    ]
+  },
+  {
+    "id": "SUB_POP",
+    "name": "聚烯烃塑性体",
+    "family": "polyolefin_plastomer",
+    "formula": null,
+    "aliases": [
+      "PO-plastomer",
+      "POP (polyolefin plastomer)",
+      "polyolefin plastomer",
+      "聚烯烃塑性体"
+    ]
+  },
+  {
+    "id": "SUB_DMPAP",
+    "name": "二甲氨基苯基乙醇酸甲酯光引发剂",
+    "family": "photoinitiator",
+    "formula": null,
+    "aliases": [
+      "DMPAP",
+      "二甲氨基苯基乙醇酸甲酯光引发剂"
+    ]
+  },
+  {
+    "id": "SUB_EDMA",
+    "name": "乙二醇二甲基丙烯酸酯",
+    "family": "crosslinking_monomer",
+    "formula": null,
+    "aliases": [
+      "EDMA",
+      "ethylene dimethacrylate",
+      "乙二醇二甲基丙烯酸酯"
+    ]
+  },
+  {
+    "id": "SUB_METHACRYLATE_MONOLITH",
+    "name": "甲基丙烯酸酯多孔整体柱",
+    "family": "porous_methacrylate_material",
+    "formula": null,
+    "aliases": [
+      "methacrylate monolith",
+      "甲基丙烯酸酯多孔整体柱"
+    ]
+  },
+  {
+    "id": "SUB_PAA",
+    "name": "聚丙烯酸",
+    "family": "grafted_polymer",
+    "formula": null,
+    "aliases": [
+      "PAA",
+      "polyacrylic acid",
+      "聚丙烯酸"
+    ]
+  },
+  {
+    "id": "SUB_SIVO408",
+    "name": "低聚短链烷基硅烷SIVO408",
+    "family": "silane_coupling_agent",
+    "formula": null,
+    "aliases": [
+      "SIVO408",
+      "低聚短链烷基硅烷SIVO408"
+    ]
+  },
+  {
+    "id": "SUB_XNBR",
+    "name": "羧基丁腈橡胶",
+    "family": "carboxylated_nitrile_rubber",
+    "formula": null,
+    "aliases": [
+      "xNBR",
+      "羧基丁腈橡胶"
+    ]
+  },
+  {
+    "id": "SUB_ACRYLAMIDE",
+    "name": "丙烯酰胺",
+    "family": "monomer",
+    "formula": "C3H5NO",
+    "aliases": [
+      "AM",
+      "acrylamide",
+      "丙烯酰胺"
+    ]
+  },
+  {
+    "id": "SUB_SODIUM_LIGNOSULFONATE",
+    "name": "木质素磺酸钠",
+    "family": "lignin_derivative",
+    "formula": null,
+    "aliases": [
+      "LS",
+      "sodium lignosulfonate",
+      "木质素磺酸钠"
+    ]
+  },
+  {
+    "id": "SUB_AO1076",
+    "name": "抗氧剂1076",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "Irganox 1076",
+      "抗氧剂1076"
+    ]
+  },
+  {
+    "id": "SUB_ETHANOX310",
+    "name": "抗氧剂Ethanox 310",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "Ethanox 310",
+      "Ethanox310",
+      "抗氧剂Ethanox 310"
+    ]
+  },
+  {
+    "id": "SUB_BIOCHAR",
+    "name": "生物质炭",
+    "family": "biochar",
+    "formula": null,
+    "aliases": [
+      "RC",
+      "reed charcoal",
+      "生物质炭"
+    ]
+  },
+  {
+    "id": "SUB_AZIDOFORMATE_PS",
+    "name": "叠氮甲酸酯端基官能化聚苯乙烯",
+    "family": "functionalized_polystyrene",
+    "formula": null,
+    "aliases": [
+      "AFPS",
+      "azidoformate-functionalized PS",
+      "叠氮甲酸酯端基官能化聚苯乙烯"
+    ]
+  },
+  {
+    "id": "SUB_PP_AN_AAC_GRAFT",
+    "name": "丙烯腈/丙烯酸接枝聚丙烯",
+    "family": "grafted_polymer",
+    "formula": null,
+    "aliases": [
+      "PP–AN–AAc graft copolymer fiber",
+      "丙烯腈/丙烯酸接枝聚丙烯"
+    ]
+  },
+  {
+    "id": "SUB_AMIDOXIMATED_PP_AN_AAC",
+    "name": "偕胺肟化PP-g-AN-AAc纤维",
+    "family": "functionalized_grafted_polymer",
+    "formula": null,
+    "aliases": [
+      "amidoximated PP–AN–AAc adsorbent",
+      "偕胺肟化PP-g-AN-AAc纤维"
+    ]
+  },
+  {
+    "id": "SUB_PE_UNSPEC",
+    "name": "聚乙烯（牌号未披露）",
+    "family": "polyethylene",
+    "formula": null,
+    "aliases": [
+      "PE, unspecified",
+      "聚乙烯（牌号未披露）"
+    ]
+  },
+  {
+    "id": "SUB_PP_PE_UNSPEC",
+    "name": "聚丙烯/聚乙烯纤维混合介质",
+    "family": "polyolefin_blend",
+    "formula": null,
+    "aliases": [
+      "PP/PE fibrous medium",
+      "聚丙烯/聚乙烯纤维混合介质"
+    ]
+  },
+  {
+    "id": "SUB_TALC_MASTERBATCH",
+    "name": "滑石粉/PP母粒",
+    "family": "mineral_masterbatch",
+    "formula": null,
+    "aliases": [
+      "talc masterbatch",
+      "滑石粉/PP母粒"
+    ]
+  },
+  {
+    "id": "SUB_LI_AHA",
+    "name": "锂盐型芳香族有机改性剂Li-AHA",
+    "family": "organic_modifier",
+    "formula": null,
+    "aliases": [
+      "Li-AHA",
+      "锂盐型芳香族有机改性剂Li-AHA"
+    ]
+  },
+  {
+    "id": "SUB_MPE",
+    "name": "茂金属聚乙烯",
+    "family": "metallocene_polyethylene",
+    "formula": null,
+    "aliases": [
+      "mPE",
+      "metallocene PE",
+      "茂金属聚乙烯"
+    ]
+  },
+  {
+    "id": "SUB_ABSA",
+    "name": "对氨基苯磺酰叠氮",
+    "family": "sulfonyl_azide",
+    "formula": null,
+    "aliases": [
+      "ABSA",
+      "对氨基苯磺酰叠氮"
+    ]
+  },
+  {
+    "id": "SUB_HBSA",
+    "name": "对羟基苯磺酰叠氮",
+    "family": "sulfonyl_azide",
+    "formula": null,
+    "aliases": [
+      "HBSA",
+      "对羟基苯磺酰叠氮"
+    ]
+  },
+  {
+    "id": "SUB_ACBSA",
+    "name": "对乙酰氨基苯磺酰叠氮",
+    "family": "sulfonyl_azide",
+    "formula": null,
+    "aliases": [
+      "ACBSA",
+      "对乙酰氨基苯磺酰叠氮"
+    ]
+  },
+  {
+    "id": "SUB_CBSA",
+    "name": "4-羧基苯磺酰叠氮",
+    "family": "sulfonyl_azide",
+    "formula": null,
+    "aliases": [
+      "4-carboxybenzenesulfonyl azide",
+      "4-羧基苯磺酰叠氮",
+      "CBSA"
+    ]
+  },
+  {
+    "id": "SUB_NH2_MIL88B",
+    "name": "氨基MIL-88B金属有机框架",
+    "family": "metal_organic_framework",
+    "formula": null,
+    "aliases": [
+      "NH2-MIL-88B",
+      "氨基MIL-88B金属有机框架"
+    ]
+  },
+  {
+    "id": "SUB_ACETIC_ACID",
+    "name": "乙酸",
+    "family": "organic_acid",
+    "formula": "C2H4O2",
+    "aliases": [
+      "acetic acid",
+      "乙酸",
+      "醋酸"
+    ]
+  },
+  {
+    "id": "SUB_METHYLENE_BLUE",
+    "name": "亚甲基蓝",
+    "family": "organic_dye",
+    "formula": null,
+    "aliases": [
+      "MB",
+      "methylene blue",
+      "亚甲基蓝"
+    ]
+  },
+  {
+    "id": "SUB_NH2_BDC",
+    "name": "2-氨基对苯二甲酸",
+    "family": "MOF_ligand",
+    "formula": null,
+    "aliases": [
+      "2-aminoterephthalic acid",
+      "2-氨基对苯二甲酸",
+      "NH2-BDC"
+    ]
+  },
+  {
+    "id": "SUB_DMF",
+    "name": "N,N-二甲基甲酰胺",
+    "family": "polar_aprotic_solvent",
+    "formula": "C3H7NO",
+    "aliases": [
+      "DMF",
+      "N,N-dimethylformamide",
+      "N,N-二甲基甲酰胺"
+    ]
+  },
+  {
+    "id": "SUB_ZNO_MOF_HYBRID",
+    "name": "ZnO/NH2-MIL-88B复合光芬顿催化剂",
+    "family": "photocatalyst_hybrid",
+    "formula": null,
+    "aliases": [
+      "ZM",
+      "ZnO/NH2-MIL-88B",
+      "ZnO/NH2-MIL-88B复合光芬顿催化剂"
+    ]
+  },
+  {
+    "id": "SUB_XNBR_UNKNOWN",
+    "name": "未指明型号的羧基丁腈橡胶乳液",
+    "family": "rubber_latex",
+    "formula": null,
+    "aliases": [
+      "xNBRL FM301",
+      "未指明型号的羧基丁腈橡胶乳液"
+    ]
+  },
+  {
+    "id": "SUB_SYNDIOTACTIC_PP",
+    "name": "间规聚丙烯（乙烯改性牌号未披露）",
+    "family": "polypropylene",
+    "formula": null,
+    "aliases": [
+      "sPP",
+      "syndiotactic polypropylene",
+      "间规聚丙烯（乙烯改性牌号未披露）"
+    ]
+  },
+  {
+    "id": "SUB_METAL_DEACTIVATOR_UNSPEC",
+    "name": "金属钝化剂（具体结构未披露）",
+    "family": "polymer_stabilizer",
+    "formula": null,
+    "aliases": [
+      "metal deactivator",
+      "metal deactivator unspecified",
+      "金属钝化剂（具体结构未披露）"
+    ]
+  },
+  {
+    "id": "SUB_MELAMINE_POLYPHOSPHATE",
+    "name": "三聚氰胺聚磷酸盐",
+    "family": "flame_retardant",
+    "formula": null,
+    "aliases": [
+      "MPP",
+      "melamine polyphosphate",
+      "三聚氰胺聚磷酸盐"
+    ]
+  },
+  {
+    "id": "SUB_DIMETHYL_SILICONE_OIL",
+    "name": "二甲基硅油",
+    "family": "silicone_oil",
+    "formula": null,
+    "aliases": [
+      "KF-96",
+      "dimethyl silicone oil",
+      "二甲基硅油"
+    ]
+  },
+  {
+    "id": "SUB_METHYL_HYDROGEN_SILICONE_OIL",
+    "name": "甲基含氢硅油",
+    "family": "silicone_oil",
+    "formula": null,
+    "aliases": [
+      "KF-99",
+      "methyl hydrogen silicone oil",
+      "甲基含氢硅油"
+    ]
+  },
+  {
+    "id": "SUB_METHYLPHENYL_SILICONE_OIL",
+    "name": "甲基苯基硅油",
+    "family": "silicone_oil",
+    "formula": null,
+    "aliases": [
+      "KF-53",
+      "methyl phenyl silicone oil",
+      "甲基苯基硅油"
+    ]
+  },
+  {
+    "id": "SUB_HYDROXYL_SILICONE_OIL",
+    "name": "羟基硅油",
+    "family": "silicone_oil",
+    "formula": null,
+    "aliases": [
+      "X-22-4039",
+      "hydroxyl silicone oil",
+      "羟基硅油"
+    ]
+  },
+  {
+    "id": "SUB_POP_G_MAH",
+    "name": "马来酸酐接枝聚烯烃塑性体",
+    "family": "grafted_polyolefin",
+    "formula": null,
+    "aliases": [
+      "GPOP",
+      "MAH-grafted POP",
+      "马来酸酐接枝聚烯烃塑性体"
+    ]
+  },
+  {
+    "id": "SUB_METALLOCENE_PP",
+    "name": "茂金属聚丙烯（牌号未披露）",
+    "family": "polypropylene",
+    "formula": null,
+    "aliases": [
+      "mPP",
+      "metallocene polypropylene",
+      "茂金属聚丙烯（牌号未披露）"
+    ]
+  },
+  {
+    "id": "SUB_ALPHA_NUCLEATOR_WNA108",
+    "name": "山梨醇类α成核剂 WNA-108",
+    "family": "nucleating_agent",
+    "formula": null,
+    "aliases": [
+      "WNA-108",
+      "WNA108",
+      "山梨醇类α成核剂 WNA-108"
+    ]
+  },
+  {
+    "id": "SUB_JN114_TITANATE",
+    "name": "钛酸酯偶联剂 JN-114",
+    "family": "coupling_agent",
+    "formula": null,
+    "aliases": [
+      "JN-114",
+      "JN114",
+      "钛酸酯偶联剂 JN-114"
+    ]
+  },
+  {
+    "id": "SUB_N_PHENYL_P_PPD",
+    "name": "N-苯基对苯二胺",
+    "family": "antioxidant",
+    "formula": null,
+    "aliases": [
+      "AD",
+      "N-phenyl-p-phenylenediamine",
+      "N-苯基对苯二胺"
+    ]
+  },
+  {
+    "id": "SUB_BANANA_FIBER",
+    "name": "香蕉纤维",
+    "family": "natural_fiber",
+    "formula": null,
+    "aliases": [
+      "banana fiber",
+      "banana fibre",
+      "香蕉纤维"
+    ]
+  },
+  {
+    "id": "SUB_SODIUM_BICARBONATE",
+    "name": "碳酸氢钠",
+    "family": "inorganic_salt",
+    "formula": null,
+    "aliases": [
+      "NaHCO3",
+      "sodium bicarbonate",
+      "碳酸氢钠"
+    ]
+  },
+  {
+    "id": "SUB_COIR_FIBER",
+    "name": "椰壳纤维",
+    "family": "natural_fiber",
+    "formula": null,
+    "aliases": [
+      "coir fiber",
+      "coir fibre",
+      "椰壳纤维"
+    ]
+  },
+  {
+    "id": "SUB_CAPE",
+    "name": "4-羧基苯硼酸频哪醇酯",
+    "family": "dynamic_crosslinker",
+    "formula": null,
+    "aliases": [
+      "4-carboxyphenylboronic acid pinacol ester",
+      "4-羧基苯硼酸频哪醇酯",
+      "CAPE"
+    ]
+  },
+  {
+    "id": "SUB_DMI",
+    "name": "1,2-二甲基咪唑",
+    "family": "reaction_catalyst",
+    "formula": null,
+    "aliases": [
+      "1,2-dimethylimidazole",
+      "1,2-二甲基咪唑",
+      "DMI"
+    ]
+  },
+  {
+    "id": "SUB_BORONATE_CROSSLINKED_PPGMA",
+    "name": "硼酸酯动态交联 PP-g-GMA（PGC）",
+    "family": "dynamic_crosslinked_polyolefin",
+    "formula": null,
+    "aliases": [
+      "PGC",
+      "boronic-ester-crosslinked PP-g-GMA",
+      "硼酸酯动态交联 PP-g-GMA（PGC）"
+    ]
+  },
+  {
+    "id": "SUB_DEXTRAN_FITC",
+    "name": "荧光素异硫氰酸酯标记葡聚糖",
+    "family": "fluorescent_biomacromolecule",
+    "formula": null,
+    "aliases": [
+      "DexFITC",
+      "FITC-dextran",
+      "荧光素异硫氰酸酯标记葡聚糖"
+    ]
+  },
+  {
+    "id": "SUB_CALCIUM_CHLORIDE",
+    "name": "氯化钙",
+    "family": "inorganic_salt",
+    "formula": null,
+    "aliases": [
+      "CaCl2",
+      "calcium chloride",
+      "氯化钙"
+    ]
+  },
+  {
+    "id": "SUB_SODIUM_CARBONATE",
+    "name": "碳酸钠",
+    "family": "inorganic_salt",
+    "formula": null,
+    "aliases": [
+      "Na2CO3",
+      "sodium carbonate",
+      "碳酸钠"
+    ]
+  },
+  {
+    "id": "SUB_VATERITE_CACO3",
+    "name": "球霰石型碳酸钙",
+    "family": "inorganic_filler",
+    "formula": "CaCO3",
+    "aliases": [
+      "CaCO3 vaterite",
+      "vaterite",
+      "vaterite CaCO3",
+      "球霰石型碳酸钙"
+    ]
+  },
+  {
+    "id": "SUB_IPC_G_MAH_CO_AD",
+    "name": "MAH-co-AD接枝 impact PP",
+    "family": "functionalized_polypropylene",
+    "formula": null,
+    "aliases": [
+      "IPC-g-(MAH-co-AD)",
+      "MAH-co-AD接枝 impact PP",
+      "PP-g-(MAH-co-AD)"
+    ]
+  },
+  {
+    "id": "SUB_UNSPECIFIED_TGA_FILLER",
+    "name": "未鉴定填料（TGA类别）",
+    "family": "unidentified_filler",
+    "formula": null,
+    "aliases": [
+      "unspecified TGA filler",
+      "未鉴定填料（TGA类别）"
+    ]
+  },
+  {
+    "id": "SUB_UNSPECIFIED_TGA_OTHER",
+    "name": "未鉴定杂材（TGA类别）",
+    "family": "unidentified_additive",
+    "formula": null,
+    "aliases": [
+      "unspecified miscellaneous material",
+      "未鉴定杂材（TGA类别）"
+    ]
+  },
+  {
+    "id": "SUB_PBT",
+    "name": "聚对苯二甲酸丁二醇酯",
+    "family": "polyester",
+    "formula": null,
+    "aliases": [
+      "PBT",
+      "polybutylene terephthalate",
+      "聚对苯二甲酸丁二醇酯"
+    ]
+  },
+  {
+    "id": "SUB_SEBS_G_MAH",
+    "name": "马来酸酐接枝SEBS",
+    "family": "grafted_compatibilizer",
+    "formula": null,
+    "aliases": [
+      "SEBS-g-MA",
+      "SEBS-g-MAH",
+      "马来酸酐接枝SEBS"
+    ]
+  },
+  {
+    "id": "SUB_POE_G_MAH",
+    "name": "马来酸酐接枝聚烯烃弹性体",
+    "family": "grafted_compatibilizer",
+    "formula": null,
+    "aliases": [
+      "POE-g-MAH",
+      "马来酸酐接枝聚烯烃弹性体"
+    ]
+  },
+  {
+    "id": "SUB_PIGMENT_RED254",
+    "name": "颜料红254",
+    "family": "pigment",
+    "formula": null,
+    "aliases": [
+      "PR254",
+      "Pigment Red 254",
+      "颜料红254"
+    ]
+  },
+  {
+    "id": "SUB_PIGMENT_BLUE15_3",
+    "name": "颜料蓝15:3",
+    "family": "pigment",
+    "formula": null,
+    "aliases": [
+      "PB15:3",
+      "Pigment Blue 15:3",
+      "铜酞菁蓝15:3",
+      "颜料蓝15:3"
+    ]
+  },
+  {
+    "id": "SUB_REDUCED_BLUE15_3",
+    "name": "还原蓝15:3（来源文献名称）",
+    "family": "pigment",
+    "formula": null,
+    "aliases": [
+      "Reduced Blue 15:3",
+      "还原蓝15:3（来源文献名称）"
+    ]
+  }
+]
